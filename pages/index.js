@@ -39,7 +39,10 @@ const Home = () => {
         </div>
         <div className="divider">
           <p>
-            Welcome to the new world of fashion. <a>See Our Latest Fashion Choices</a>
+            Welcome to the new world of fashion.{' '}
+            <Link href="/contact">
+              <a>See Our Latest Fashion Choices</a>
+            </Link>
           </p>
         </div>
         <div className="about-layout">

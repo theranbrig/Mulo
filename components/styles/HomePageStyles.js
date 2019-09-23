@@ -76,6 +76,9 @@ const HomePageStyles = styled.div`
       border-top: 2px solid ${props => props.theme.blue};
       border-bottom: 2px solid ${props => props.theme.blue};
     }
+    a {
+      color: ${props => props.theme.blue};
+    }
   }
   .about-layout {
     display: grid;
@@ -91,12 +94,14 @@ const HomePageStyles = styled.div`
       text-align: center;
       color: ${props => props.theme.blue};
       font-family: ${props => props.theme.rightFont};
-      font-size: 24px;
+      font-size: 1.6rem;
       letter-spacing: 0.15rem;
     }
     p {
       font-family: ${props => props.theme.raleFont};
       padding: 20px;
+      font-size: 1.2rem;
+      letter-spacing: 0.05rem;
     }
   }
 

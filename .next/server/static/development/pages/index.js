@@ -987,7 +987,7 @@ __webpack_require__.r(__webpack_exports__);
 var HomePageStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "HomePageStyles",
   componentId: "s1loy7-0"
-})(["background:", ";.main-content{width:100%;margin:0 auto;display:grid;grid-template-columns:1fr 3fr;grid-template-rows:1fr;align-items:center;justify-items:center;height:600px;border-bottom:2px solid ", ";@media (max-width:900px){grid-template-columns:1fr;}img.title-image{width:25%;}a{color:", ";}.side-pictures{background:linear-gradient(#ffffff67,#ffffff32),url('https://images.unsplash.com/photo-1503160814947-656030efef06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80');background-size:cover;margin:0;width:100%;height:600px;border-right:2px solid ", ";img{height:100%;width:100%;}@media (max-width:900px){display:none;}}.title-box{text-align:center;background:linear-gradient(#ffffff67,#ffffff32),url('https://images.unsplash.com/photo-1541327883457-a5c8214cc9fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1614&q=80');background-size:cover;height:600px;img{margin-top:5%;}h2{text-align:center;font-family:", ";margin-top:25%;color:", ";text-shadow:1px 2px 2px #ffffff67,3px 3px 3px #ffffff45;}button{padding:12px;border:none;font-size:20px;font-family:", ";background:", ";letter-spacing:0.1rem;a{color:", ";}}}}.divider{p{color:", ";font-family:", ";font-size:24px;text-align:center;padding:10px;border-top:2px solid ", ";border-bottom:2px solid ", ";}}.about-layout{display:grid;max-width:100%;grid-template-columns:1fr 1fr 1fr;color:", ";img{max-width:60%;margin-left:20%;margin-top:10%;}h3{text-align:center;color:", ";font-family:", ";font-size:24px;letter-spacing:0.15rem;}p{font-family:", ";padding:20px;}}.active-link{color:", ";}"], function (props) {
+})(["background:", ";.main-content{width:100%;margin:0 auto;display:grid;grid-template-columns:1fr 3fr;grid-template-rows:1fr;align-items:center;justify-items:center;height:600px;border-bottom:2px solid ", ";@media (max-width:900px){grid-template-columns:1fr;}img.title-image{width:25%;}a{color:", ";}.side-pictures{background:linear-gradient(#ffffff67,#ffffff32),url('https://images.unsplash.com/photo-1503160814947-656030efef06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80');background-size:cover;margin:0;width:100%;height:600px;border-right:2px solid ", ";img{height:100%;width:100%;}@media (max-width:900px){display:none;}}.title-box{text-align:center;background:linear-gradient(#ffffff67,#ffffff32),url('https://images.unsplash.com/photo-1541327883457-a5c8214cc9fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1614&q=80');background-size:cover;height:600px;img{margin-top:5%;}h2{text-align:center;font-family:", ";margin-top:25%;color:", ";text-shadow:1px 2px 2px #ffffff67,3px 3px 3px #ffffff45;}button{padding:12px;border:none;font-size:20px;font-family:", ";background:", ";letter-spacing:0.1rem;a{color:", ";}}}}.divider{p{color:", ";font-family:", ";font-size:24px;text-align:center;padding:10px;border-top:2px solid ", ";border-bottom:2px solid ", ";}a{color:", ";}}.about-layout{display:grid;max-width:100%;grid-template-columns:1fr 1fr 1fr;color:", ";img{max-width:60%;margin-left:20%;margin-top:10%;}h3{text-align:center;color:", ";font-family:", ";font-size:1.6rem;letter-spacing:0.15rem;}p{font-family:", ";padding:20px;font-size:1.2rem;letter-spacing:0.05rem;}}.active-link{color:", ";}"], function (props) {
   return props.theme.black;
 }, function (props) {
   return props.theme.blue;
@@ -1009,6 +1009,8 @@ var HomePageStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.di
   return props.theme.white;
 }, function (props) {
   return props.theme.raleFont;
+}, function (props) {
+  return props.theme.blue;
 }, function (props) {
   return props.theme.blue;
 }, function (props) {
@@ -2488,95 +2490,102 @@ var Home = function Home() {
       lineNumber: 41
     },
     __self: this
-  }, "Welcome to the new world of fashion. ", react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  }, "Welcome to the new world of fashion.", ' ', react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    href: "/contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 43
     },
     __self: this
-  }, "See Our Latest Fashion Choices"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, "See Our Latest Fashion Choices")))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "about-layout",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 48
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "about-1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 49
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
     src: "https://images.unsplash.com/photo-1551310357-b26c1af069c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 50
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 51
     },
     __self: this
   }, "High-Quality"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 52
     },
     __self: this
   }, "Lorem ipsum dolor amet organic prism whatever tumblr. Kickstarter four dollar toast kitsch jianbing. Enamel pin tofu green juice chambray forage 3 wolf moon austin live-edge. PBR&B succulents waistcoat +1 letterpress gentrify. DIY pok pok heirloom echo park umami. Vegan forage four dollar toast venmo, meh hella bitters ennui cardigan godard kitsch before they sold out whatever.")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "about-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 59
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
     src: "https://images.unsplash.com/photo-1505734169265-a86113baa6c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 60
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 61
     },
     __self: this
   }, "Fashion Forward"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 62
     },
     __self: this
   }, "Lorem ipsum dolor amet austin DIY vape before they sold out sartorial organic. Cronut af keffiyeh kinfolk lyft fixie sriracha irony. Four dollar toast farm-to-table mixtape raw denim whatever salvia. Cloud bread chambray jianbing, hella squid literally hot chicken fashion axe master cleanse photo booth small batch. Jianbing craft beer mumblecore cloud bread flexitarian kitsch. PBR&B single-origin coffee church-key put a bird on it, ethical brunch jean shorts.")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "about-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 70
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
     src: "https://images.unsplash.com/photo-1456885284447-7dd4bb8720bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 71
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 72
     },
     __self: this
   }, "Environmentally Sustainable"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 73
     },
     __self: this
   }, "Lorem ipsum dolor amet flannel vegan irony portland jianbing. Intelligentsia pop-up distillery ugh, street art woke leggings shabby chic readymade pabst paleo iPhone. Bitters franzen vinyl, you probably haven't heard of them narwhal la croix cornhole street art next level lo-fi prism palo santo blog adaptogen. Etsy pinterest flannel scenester celiac knausgaard, disrupt migas.")))));
