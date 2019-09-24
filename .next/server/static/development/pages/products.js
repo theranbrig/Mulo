@@ -88,10 +88,65 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./components/ContactLink.js":
+/*!***********************************!*\
+  !*** ./components/ContactLink.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/components/ContactLink.js";
+
+
+
+var ContactLink = function ContactLink(_ref) {
+  var link = _ref.link,
+      icon = _ref.icon,
+      name = _ref.name;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: link,
+    target: "_blank",
+    rel: "noopener noreferrer",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: icon,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, name));
+};
+
+ContactLink.propTypes = {
+  link: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
+  name: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
+  icon: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (ContactLink);
+
+/***/ }),
 
 /***/ "./components/Footer.js":
 /*!******************************!*\
@@ -235,52 +290,212 @@ Footer.propTypes = {
 
 /***/ }),
 
-/***/ "./components/IconLink.js":
-/*!********************************!*\
-  !*** ./components/IconLink.js ***!
-  \********************************/
+/***/ "./components/Form.js":
+/*!****************************!*\
+  !*** ./components/Form.js ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/components/IconLink.js";
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _context_DarkContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./context/DarkContext */ "./components/context/DarkContext.js");
+
+
+var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/components/Form.js";
 
 
 
-var IconLink = function IconLink(_ref) {
-  var link = _ref.link,
-      icon = _ref.icon,
-      name = _ref.name;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: link,
-    target: "_blank",
-    rel: "noopener noreferrer",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, name, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: icon,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }));
+
+var SuccessStyles = styled_components__WEBPACK_IMPORTED_MODULE_4___default.a.div.withConfig({
+  displayName: "Form__SuccessStyles",
+  componentId: "vd6jnd-0"
+})(["height:20px;p{font-size:18px;color:", ";}"], function (props) {
+  return props.theme.blue;
+});
+
+var encode = function encode(data) {
+  return _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1___default()(data).map(function (key) {
+    return "".concat(encodeURIComponent(key), "=").concat(encodeURIComponent(data[key]));
+  }).join('&');
 };
 
-IconLink.propTypes = {
-  link: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
-  name: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
-  icon: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired
+var ContactForm = function ContactForm() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(''),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+      name = _useState2[0],
+      setName = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(''),
+      _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState3, 2),
+      email = _useState4[0],
+      setEmail = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(''),
+      _useState6 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState5, 2),
+      message = _useState6[0],
+      setMessage = _useState6[1];
+
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(null),
+      _useState8 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState7, 2),
+      successMessage = _useState8[0],
+      setSuccessMessage = _useState8[1];
+
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_2__["useContext"])(_context_DarkContext__WEBPACK_IMPORTED_MODULE_5__["DarkContext"]),
+      darkMode = _useContext.darkMode;
+
+  function handleSubmit(e) {
+    fetch('/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: encode({
+        'form-name': 'contact',
+        name: name,
+        email: email,
+        message: message
+      })
+    }).then(function () {
+      return setSuccessMessage('Thanks for getting in touch.  I will get back to you soon.');
+    }).catch(function (error) {
+      return console.log(error);
+    });
+    e.preventDefault();
+    setName('');
+    setEmail('');
+    setMessage('');
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: "contact-form",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, "Send A Quick Message Directly"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"], {
+    onSubmit: handleSubmit,
+    inverted: darkMode,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Group, {
+    widths: "equal",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Field, {
+    stackable: "true",
+    width: 8,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Input, {
+    name: "name",
+    type: "text",
+    placeholder: "Enter Name",
+    onChange: function onChange(e) {
+      return setName(e.target.value);
+    },
+    value: name,
+    required: true,
+    label: "Name",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Field, {
+    stackable: "true",
+    width: 8,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Input, {
+    name: "email",
+    type: "email",
+    placeholder: "Enter Email Address",
+    onChange: function onChange(e) {
+      return setEmail(e.target.value);
+    },
+    value: email,
+    label: "Email Address",
+    required: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: this
+  }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Group, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Field, {
+    name: "message",
+    control: semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["TextArea"],
+    placeholder: "Send a quick message to get in touch about development inquiries.",
+    label: "Message",
+    width: 16,
+    onChange: function onChange(e) {
+      return setMessage(e.target.value);
+    },
+    value: message,
+    required: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+    inverted: darkMode,
+    type: "submit",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82
+    },
+    __self: this
+  }, "Submit!")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(SuccessStyles, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 86
+    },
+    __self: this
+  }, successMessage && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 86
+    },
+    __self: this
+  }, successMessage)));
 };
-/* harmony default export */ __webpack_exports__["default"] = (IconLink);
+
+/* harmony default export */ __webpack_exports__["default"] = (ContactForm);
 
 /***/ }),
 
@@ -665,152 +880,6 @@ var NavLinks = function NavLinks() {
 
 /***/ }),
 
-/***/ "./components/ProjectCard.js":
-/*!***********************************!*\
-  !*** ./components/ProjectCard.js ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _static_graphql_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../static/graphql.svg */ "./static/graphql.svg");
-/* harmony import */ var _static_graphql_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_static_graphql_svg__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _static_graphqldark_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../static/graphqldark.svg */ "./static/graphqldark.svg");
-/* harmony import */ var _static_graphqldark_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_static_graphqldark_svg__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _context_DarkContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./context/DarkContext */ "./components/context/DarkContext.js");
-var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/components/ProjectCard.js";
-
-
-
-
-
-
-
-var ProjectCard = function ProjectCard(props) {
-  var _props$project = props.project,
-      title = _props$project.title,
-      description = _props$project.description,
-      tech = _props$project.tech,
-      slug = _props$project.slug,
-      icon = _props$project.icon;
-
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_context_DarkContext__WEBPACK_IMPORTED_MODULE_5__["DarkContext"]),
-      darkMode = _useContext.darkMode;
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "individual-project",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: {
-      pathname: '/project',
-      query: {
-        name: slug
-      }
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: icon,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "project-icons",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, tech.map(function (el) {
-    if (el === 'graphql') {
-      if (darkMode) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-          src: _static_graphql_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
-          alt: "graphql",
-          className: "graphql-logo",
-          style: {
-            padding: '0 7px 0 5px',
-            height: '28px'
-          },
-          key: el,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 23
-          },
-          __self: this
-        });
-      }
-
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _static_graphqldark_svg__WEBPACK_IMPORTED_MODULE_4___default.a,
-        alt: "graphql",
-        className: "graphql-logo",
-        style: {
-          padding: '0 7px 0 5px',
-          height: '28px'
-        },
-        key: el,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 33
-        },
-        __self: this
-      });
-    }
-
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-      className: el,
-      key: el,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 42
-      },
-      __self: this
-    });
-  })))));
-};
-
-ProjectCard.propTypes = {
-  project: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object.isRequired
-};
-/* harmony default export */ __webpack_exports__["default"] = (ProjectCard);
-
-/***/ }),
-
 /***/ "./components/context/DarkContext.js":
 /*!*******************************************!*\
   !*** ./components/context/DarkContext.js ***!
@@ -938,6 +1007,58 @@ UserProvider.propTypes = {
 
 /***/ }),
 
+/***/ "./components/styles/ContactPageStyles.js":
+/*!************************************************!*\
+  !*** ./components/styles/ContactPageStyles.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
+
+var ContactPageStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "ContactPageStyles",
+  componentId: "h0god9-0"
+})(["display:grid;grid-template-columns:1fr;grid-template-rows:250px 2fr 1fr 4fr;padding:30px;align-items:center;text-align:center;background-color:", ";@media (max-width:900px){width:100%;grid-template-columns:100%;grid-template-rows:1fr 4fr 2fr 3fr;}.contact-title{img{width:20%;}h1,p{color:", ";font-family:", ";}h1{font-size:2rem;}p{font-size:1.5rem;}}div.social-icons{list-style-type:none;justify-items:center;align-items:center;text-align:center;padding:0;display:grid;grid-gap:30px;grid-template-columns:repeat(5,1fr);grid-template-rows:1fr;@media (max-width:900px){grid-template-columns:100%;grid-template-rows:repeat(5,1fr);}a{width:100%;p{padding:5px;font-size:1rem;color:", ";font-family:", ";}i{font-size:5rem;color:", ";&:hover{-webkit-text-stroke-width:1px;-webkit-text-stroke-color:", ";}}}}.bottom-writing{p{color:", ";font-size:1.5rem;font-family:", ";width:80%;margin-left:10%;@media (max-width:900px){width:100%;margin:0;}a{color:", ";}}}.form-area{width:60%;margin:20px 20%;font-family:", ";h2{color:", ";font-family:", ";}button{color:", " !important;margin:10px;}textarea{height:200px;}textarea,input{background-color:", " !important;}@media (max-width:900px){width:90%;margin:0;margin-left:5%;}label::after{color:", " !important;}}"], function (props) {
+  return props.theme.black;
+}, function (props) {
+  return props.theme.white;
+}, function (props) {
+  return props.theme.raleFont;
+}, function (props) {
+  return props.theme.white;
+}, function (props) {
+  return props.theme.raleFont;
+}, function (props) {
+  return props.theme.blue;
+}, function (props) {
+  return props.theme.white;
+}, function (props) {
+  return props.theme.white;
+}, function (props) {
+  return props.theme.raleFont;
+}, function (props) {
+  return props.theme.blue;
+}, function (props) {
+  return props.theme.raleFont;
+}, function (props) {
+  return props.theme.white;
+}, function (props) {
+  return props.theme.raleFont;
+}, function (props) {
+  return props.theme.blue;
+}, function (props) {
+  return props.theme.white;
+}, function (props) {
+  return props.theme.blue;
+});
+/* harmony default export */ __webpack_exports__["default"] = (ContactPageStyles);
+
+/***/ }),
+
 /***/ "./components/styles/FooterStyles.js":
 /*!*******************************************!*\
   !*** ./components/styles/FooterStyles.js ***!
@@ -969,64 +1090,6 @@ var FooterStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.
   return props.theme.blue;
 });
 /* harmony default export */ __webpack_exports__["default"] = (FooterStyles);
-
-/***/ }),
-
-/***/ "./components/styles/HomePageStyles.js":
-/*!*********************************************!*\
-  !*** ./components/styles/HomePageStyles.js ***!
-  \*********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
-
-var HomePageStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
-  displayName: "HomePageStyles",
-  componentId: "s1loy7-0"
-})(["background:", ";.main-content{width:100%;margin:0 auto;display:grid;grid-template-columns:1fr 3fr;grid-template-rows:1fr;align-items:center;justify-items:center;height:600px;border-bottom:2px solid ", ";@media (max-width:900px){grid-template-columns:1fr;}img.title-image{width:25%;}a{color:", ";}.side-pictures{background:linear-gradient(#ffffff67,#ffffff32),url('https://images.unsplash.com/photo-1503160814947-656030efef06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80');background-size:cover;margin:0;width:100%;height:600px;border-right:2px solid ", ";img{height:100%;width:100%;}@media (max-width:900px){display:none;}}.title-box{text-align:center;background:linear-gradient(#ffffff67,#ffffff32),url('https://images.unsplash.com/photo-1541327883457-a5c8214cc9fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1614&q=80');background-size:cover;height:600px;img{margin-top:5%;}h2{text-align:center;font-family:", ";margin-top:25%;color:", ";text-shadow:1px 2px 2px #ffffff67,3px 3px 3px #ffffff45;letter-spacing:0.1rem;font-size:1.8rem;}button{padding:12px;border:none;font-size:1.5rem;font-family:", ";background:", ";letter-spacing:0.1rem;a{color:", ";}}}}.divider{p{color:", ";font-family:", ";font-size:1.7rem;text-align:center;padding:10px;border-top:2px solid ", ";border-bottom:2px solid ", ";letter-spacing:0.1rem;}a{color:", ";}}.about-layout{display:grid;max-width:100%;grid-template-columns:1fr 1fr 1fr;color:", ";img{max-width:60%;margin-left:20%;margin-top:10%;}h3{text-align:center;color:", ";font-family:", ";font-size:1.6rem;letter-spacing:0.15rem;}p{font-family:", ";padding:20px;font-size:1.2rem;letter-spacing:0.05rem;}}.active-link{color:", ";}"], function (props) {
-  return props.theme.black;
-}, function (props) {
-  return props.theme.blue;
-}, function (props) {
-  return props.theme.blue;
-}, function (props) {
-  return props.theme.blue;
-}, function (props) {
-  return props.theme.raleFont;
-}, function (props) {
-  return props.theme.black;
-}, function (props) {
-  return props.theme.rightFont;
-}, function (props) {
-  return props.theme.blue;
-}, function (props) {
-  return props.theme.white;
-}, function (props) {
-  return props.theme.white;
-}, function (props) {
-  return props.theme.raleFont;
-}, function (props) {
-  return props.theme.blue;
-}, function (props) {
-  return props.theme.blue;
-}, function (props) {
-  return props.theme.blue;
-}, function (props) {
-  return props.theme.white;
-}, function (props) {
-  return props.theme.blue;
-}, function (props) {
-  return props.theme.rightFont;
-}, function (props) {
-  return props.theme.raleFont;
-}, function (props) {
-  return props.theme.white;
-});
-/* harmony default export */ __webpack_exports__["default"] = (HomePageStyles);
 
 /***/ }),
 
@@ -2339,37 +2402,25 @@ module.exports = __webpack_require__(/*! ./dist/client/router */ "./node_modules
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/products.js":
+/*!***************************!*\
+  !*** ./pages/products.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-particles-js */ "react-particles-js");
-/* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_particles_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next-server/head */ "next-server/head");
-/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_server_head__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _static_ParticleParams_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../static/ParticleParams.json */ "./static/ParticleParams.json");
-var _static_ParticleParams_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../static/ParticleParams.json */ "./static/ParticleParams.json", 1);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _static_data__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../static/data */ "./static/data.js");
-/* harmony import */ var _components_ProjectCard__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/ProjectCard */ "./components/ProjectCard.js");
-/* harmony import */ var _components_IconLink__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/IconLink */ "./components/IconLink.js");
-/* harmony import */ var _components_styles_HomePageStyles__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/styles/HomePageStyles */ "./components/styles/HomePageStyles.js");
-/* harmony import */ var _components_context_DarkContext__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/context/DarkContext */ "./components/context/DarkContext.js");
-/* harmony import */ var _components_context_UserContext__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/context/UserContext */ "./components/context/UserContext.js");
-var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/pages/index.js";
-
-/* eslint-disable no-console */
-
-/* eslint-disable react/no-unescaped-entities */
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next-server/head */ "next-server/head");
+/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_server_head__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_Form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Form */ "./components/Form.js");
+/* harmony import */ var _components_ContactLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/ContactLink */ "./components/ContactLink.js");
+/* harmony import */ var _components_styles_ContactPageStyles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/styles/ContactPageStyles */ "./components/styles/ContactPageStyles.js");
+/* harmony import */ var _components_context_DarkContext__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/context/DarkContext */ "./components/context/DarkContext.js");
+var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/pages/products.js";
 
 
 
@@ -2378,231 +2429,161 @@ var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/pages/index.js";
 
 
 
-
-
-
-
-
-var Home = function Home() {
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_2__["useContext"])(_components_context_DarkContext__WEBPACK_IMPORTED_MODULE_10__["DarkContext"]),
+var Contact = function Contact() {
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_components_context_DarkContext__WEBPACK_IMPORTED_MODULE_6__["DarkContext"]),
       darkMode = _useContext.darkMode;
 
-  var _useContext2 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useContext"])(_components_context_UserContext__WEBPACK_IMPORTED_MODULE_11__["UserContext"]),
-      user = _useContext2.user,
-      userLoading = _useContext2.userLoading;
-
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 12
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 13
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("title", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 14
     },
     __self: this
-  }, "MULO | Online Thrift Store")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_styles_HomePageStyles__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  }, "Theran Brigowatz | Contact")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_ContactPageStyles__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 16
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "main-content",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "contact-title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: darkMode ? 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_320/v1551529192/theran-logo.png' : 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_320/v1551529192/theran-logo-Original-dark.png',
+    alt: "Theran Brigowatz Logo",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "side-pictures",
+  }, "CONTACT THERAN"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "title-box",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-    src: "../static/Default Photoshop Size.png",
-    alt: "Theran Brigowatz Logo",
-    className: "title-image",
+  }, "Get a hold of me for any questions you may have.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "social-icons",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    link: "https://www.github.com/theranbrig",
+    icon: "fab fa-github",
+    name: "theranbrig",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: this
-  }, "They loved it. You'll love it too."), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    link: "https://www.twitter.com/wellBuilt",
+    icon: "fab fa-twitter",
+    name: "wellBuilt",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    href: "/products",
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    link: "https://medium.com/@theran.brigowatz",
+    icon: "fab fa-medium-m",
+    name: "Theran Brigowatz",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 32
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    link: "https://www.linkedin.com/in/theran-brigowatz-a861b3133/",
+    icon: "fab fa-linkedin-in",
+    name: "Theran Brigowatz",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
     },
     __self: this
-  }, "Shop Now ", react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-    className: "fas fa-arrow-right",
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    link: "mailTo:theran.brigowatz@gmail.com",
+    icon: "far fa-envelope-open",
+    name: "theran.brigowatz@gmail.com",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 38
     },
     __self: this
-  })))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "divider",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: this
-  }, "Welcome to the new world of fashion.", ' ', react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    href: "/contact",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bottom-writing",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 44
     },
     __self: this
-  }, "See Our Latest Fashion Choices")))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "about-layout",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 45
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "about-1",
+  }, "I am available to discuss freelance, contract, and full-time work opportunities. Check out my", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://docs.google.com/document/d/1GOzEZ8lB-KF4j3GQCFPhZ7pdRygX6wl7fHr_pbYKQTw/edit?usp=sharing",
+    target: "_blank",
+    rel: "noopener noreferrer",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 47
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-    src: "https://images.unsplash.com/photo-1551310357-b26c1af069c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80",
+  }, "resume."), ' ', "Please get in touch with me, or check out my", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://medium.com/@theran.brigowatz",
+    target: "_blank",
+    rel: "noopener noreferrer",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 55
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51
-    },
-    __self: this
-  }, "High-Quality"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52
-    },
-    __self: this
-  }, "Lorem ipsum dolor amet organic prism whatever tumblr. Kickstarter four dollar toast kitsch jianbing. Enamel pin tofu green juice chambray forage 3 wolf moon austin live-edge. PBR&B succulents waistcoat +1 letterpress gentrify. DIY pok pok heirloom echo park umami. Vegan forage four dollar toast venmo, meh hella bitters ennui cardigan godard kitsch before they sold out whatever.")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "about-2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-    src: "https://images.unsplash.com/photo-1505734169265-a86113baa6c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
+  }, "blog"), ", with any questions, comments, or biting criticism that you may have.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-area",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 61
     },
     __self: this
-  }, "Fashion Forward"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Form__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 62
     },
     __self: this
-  }, "Lorem ipsum dolor amet austin DIY vape before they sold out sartorial organic. Cronut af keffiyeh kinfolk lyft fixie sriracha irony. Four dollar toast farm-to-table mixtape raw denim whatever salvia. Cloud bread chambray jianbing, hella squid literally hot chicken fashion axe master cleanse photo booth small batch. Jianbing craft beer mumblecore cloud bread flexitarian kitsch. PBR&B single-origin coffee church-key put a bird on it, ethical brunch jean shorts.")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "about-3",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-    src: "https://images.unsplash.com/photo-1456885284447-7dd4bb8720bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: this
-  }, "Environmentally Sustainable"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: this
-  }, "Lorem ipsum dolor amet flannel vegan irony portland jianbing. Intelligentsia pop-up distillery ugh, street art woke leggings shabby chic readymade pabst paleo iPhone. Bitters franzen vinyl, you probably haven't heard of them narwhal la croix cornhole street art next level lo-fi prism palo santo blog adaptogen. Etsy pinterest flannel scenester celiac knausgaard, disrupt migas.")))));
+  }))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Home);
-
-/***/ }),
-
-/***/ "./static/ParticleParams.json":
-/*!************************************!*\
-  !*** ./static/ParticleParams.json ***!
-  \************************************/
-/*! exports provided: particles, interactivity, retina_detect, default */
-/***/ (function(module) {
-
-module.exports = {"particles":{"number":{"value":170,"density":{"enable":true,"value_area":1000}},"color":{"value":"#dcdcdc"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#efefef","opacity":0.36076771369474264,"width":1},"move":{"enable":true,"speed":0.25,"direction":"none","random":true,"straight":false,"out_mode":false,"bounce":true,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":"repulse"},"onclick":{"enable":false,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true};
+/* harmony default export */ __webpack_exports__["default"] = (Contact);
 
 /***/ }),
 
@@ -2782,36 +2763,14 @@ var users = [{
 
 /***/ }),
 
-/***/ "./static/graphql.svg":
-/*!****************************!*\
-  !*** ./static/graphql.svg ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyBmaWxsPSJnYWluc2Jvcm8iIHJvbGU9ImltZyIgdmlld0JveD0iMCAwIDI0IDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0aXRsZT5HcmFwaFFMIGljb248L3RpdGxlPjxwYXRoIGQ9Ik0xNC4wNTEgMi43NTFsNC45MzUgMi44NWMuODE2LS44NTkgMi4xNzMtLjg5MyAzLjAzMi0uMDc3LjE0OC4xNC4yNzQuMzAxLjM3Ny40NzcuNTg5IDEuMDI4LjIzMiAyLjMzOS0uNzk2IDIuOTI4LS4xNzQuMS0uMzYxLjE3NS0uNTU4LjIyM3Y1LjY5OWMxLjE0Ni4yNzMgMS44NTQgMS40MjMgMS41OCAyLjU2OS0uMDQ4LjIwNC0uMTI3LjQtLjIzMi41ODEtLjU5MiAxLjAyMy0xLjkwMSAxLjM3NC0yLjkyNy43ODItLjE5Ni0uMTEzLS4zNzUtLjI1OS0uNTI2LS40MjlsLTQuOTA1IDIuODMyYy4zNzIgMS4xMjQtLjIzOCAyLjMzNS0xLjM2MSAyLjcwNi0uMjE3LjA3MS0uNDQyLjEwOC0uNjcuMTA4LTEuMTgxLjAwMS0yLjEzOS0uOTU1LTIuMTQtMi4xMzYgMC0uMjA1LjAyOS0uNDEuMDg4LS42MDlsLTQuOTM2LTIuODQ3Yy0uODE2Ljg1NC0yLjE3MS44ODctMy4wMjYuMDctLjg1NC0uODE2LS44ODYtMi4xNzEtLjA3LTMuMDI2LjI4My0uMjk3LjY0Ni0uNTA2IDEuMDQ0LS42MDNsLjAwMS01LjY5OWMtMS4xNS0uMjc2LTEuODU4LTEuNDMzLTEuNTgxLTIuNTg0LjA0Ny0uMTk4LjEyMy0uMzg5LjIyNC0uNTY2LjU5Mi0xLjAyNCAxLjkwMi0xLjM3NCAyLjkyNy0uNzgyLjE3Ny4xMDEuMzM5LjIyOC40OC4zNzdsNC45MzgtMi44NUM5LjYxMyAxLjYxMiAxMC4yNi40MjMgMTEuMzkuMDg4IDExLjU4Ny4wMjkgMTEuNzk0IDAgMTIgMGMxLjE4MS0uMDAxIDIuMTM5Ljk1NCAyLjE0IDIuMTM0LjAwMS4yMDktLjAzLjQxOC0uMDg5LjYxN3ptLS41MTUuODc3Yy0uMDE5LjAyMS0uMDM3LjAzOS0uMDU4LjA1OGw2LjQ2MSAxMS4xOWMuMDI2LS4wMDkuMDU2LS4wMTYuMDgyLS4wMjNWOS4xNDZjLTEuMTQ1LS4yODMtMS44NDItMS40NDItMS41NTgtMi41ODguMDA2LS4wMjQuMDEyLS4wNDkuMDE5LS4wNzJsLTQuOTQ2LTIuODU4em0tMy4wMTUuMDU5bC0uMDYtLjA2LTQuOTQ2IDIuODUyYy4zMjcgMS4xMzUtLjMyNyAyLjMxOC0xLjQ2MSAyLjY0NS0uMDI2LjAwOC0uMDUxLjAxNC0uMDc2LjAyMXY1LjcwOGwuMDg0LjAyMyA2LjQ2MS0xMS4xOS0uMDAyLjAwMXptMi4wNzYuNTA3Yy0uMzkuMTEyLS44MDMuMTEyLTEuMTkyIDBsLTYuNDYgMTEuMTg5Yy4yOTQuMjgzLjUwMi42NDUuNiAxLjA0MWgxMi45MTFjLjA5Ny0uMzk4LjMwNy0uNzYxLjYwMy0xLjA0NEwxMi41OTcgNC4xOTR6bS45ODYgMTYuMjI3bDQuOTEzLTIuODM4Yy0uMDE1LS4wNDctLjAyNy0uMDk0LS4wMzgtLjE0Mkg1LjU0MmwtLjAyMS4wODMgNC45MzkgMi44NTJjLjM4OC0uNDA0LjkzNC0uNjUzIDEuNTQtLjY1My42MjcgMCAxLjE5LjI2OSAxLjU4My42OTh6Ii8+PC9zdmc+Cg=="
-
-/***/ }),
-
-/***/ "./static/graphqldark.svg":
-/*!********************************!*\
-  !*** ./static/graphqldark.svg ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMjMyMzIzIiByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R3JhcGhRTCBpY29uPC90aXRsZT48cGF0aCBkPSJNMTQuMDUxIDIuNzUxbDQuOTM1IDIuODVjLjgxNi0uODU5IDIuMTczLS44OTMgMy4wMzItLjA3Ny4xNDguMTQuMjc0LjMwMS4zNzcuNDc3LjU4OSAxLjAyOC4yMzIgMi4zMzktLjc5NiAyLjkyOC0uMTc0LjEtLjM2MS4xNzUtLjU1OC4yMjN2NS42OTljMS4xNDYuMjczIDEuODU0IDEuNDIzIDEuNTggMi41NjktLjA0OC4yMDQtLjEyNy40LS4yMzIuNTgxLS41OTIgMS4wMjMtMS45MDEgMS4zNzQtMi45MjcuNzgyLS4xOTYtLjExMy0uMzc1LS4yNTktLjUyNi0uNDI5bC00LjkwNSAyLjgzMmMuMzcyIDEuMTI0LS4yMzggMi4zMzUtMS4zNjEgMi43MDYtLjIxNy4wNzEtLjQ0Mi4xMDgtLjY3LjEwOC0xLjE4MS4wMDEtMi4xMzktLjk1NS0yLjE0LTIuMTM2IDAtLjIwNS4wMjktLjQxLjA4OC0uNjA5bC00LjkzNi0yLjg0N2MtLjgxNi44NTQtMi4xNzEuODg3LTMuMDI2LjA3LS44NTQtLjgxNi0uODg2LTIuMTcxLS4wNy0zLjAyNi4yODMtLjI5Ny42NDYtLjUwNiAxLjA0NC0uNjAzbC4wMDEtNS42OTljLTEuMTUtLjI3Ni0xLjg1OC0xLjQzMy0xLjU4MS0yLjU4NC4wNDctLjE5OC4xMjMtLjM4OS4yMjQtLjU2Ni41OTItMS4wMjQgMS45MDItMS4zNzQgMi45MjctLjc4Mi4xNzcuMTAxLjMzOS4yMjguNDguMzc3bDQuOTM4LTIuODVDOS42MTMgMS42MTIgMTAuMjYuNDIzIDExLjM5LjA4OCAxMS41ODcuMDI5IDExLjc5NCAwIDEyIDBjMS4xODEtLjAwMSAyLjEzOS45NTQgMi4xNCAyLjEzNC4wMDEuMjA5LS4wMy40MTgtLjA4OS42MTd6bS0uNTE1Ljg3N2MtLjAxOS4wMjEtLjAzNy4wMzktLjA1OC4wNThsNi40NjEgMTEuMTljLjAyNi0uMDA5LjA1Ni0uMDE2LjA4Mi0uMDIzVjkuMTQ2Yy0xLjE0NS0uMjgzLTEuODQyLTEuNDQyLTEuNTU4LTIuNTg4LjAwNi0uMDI0LjAxMi0uMDQ5LjAxOS0uMDcybC00Ljk0Ni0yLjg1OHptLTMuMDE1LjA1OWwtLjA2LS4wNi00Ljk0NiAyLjg1MmMuMzI3IDEuMTM1LS4zMjcgMi4zMTgtMS40NjEgMi42NDUtLjAyNi4wMDgtLjA1MS4wMTQtLjA3Ni4wMjF2NS43MDhsLjA4NC4wMjMgNi40NjEtMTEuMTktLjAwMi4wMDF6bTIuMDc2LjUwN2MtLjM5LjExMi0uODAzLjExMi0xLjE5MiAwbC02LjQ2IDExLjE4OWMuMjk0LjI4My41MDIuNjQ1LjYgMS4wNDFoMTIuOTExYy4wOTctLjM5OC4zMDctLjc2MS42MDMtMS4wNDRMMTIuNTk3IDQuMTk0em0uOTg2IDE2LjIyN2w0LjkxMy0yLjgzOGMtLjAxNS0uMDQ3LS4wMjctLjA5NC0uMDM4LS4xNDJINS41NDJsLS4wMjEuMDgzIDQuOTM5IDIuODUyYy4zODgtLjQwNC45MzQtLjY1MyAxLjU0LS42NTMuNjI3IDAgMS4xOS4yNjkgMS41ODMuNjk4eiIvPjwvc3ZnPgo="
-
-/***/ }),
-
-/***/ 3:
-/*!******************************!*\
-  !*** multi ./pages/index.js ***!
-  \******************************/
+/***/ 5:
+/*!*********************************!*\
+  !*** multi ./pages/products.js ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/theranbrigowatz/WebDev/projects/mulo/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /Users/theranbrigowatz/WebDev/projects/mulo/pages/products.js */"./pages/products.js");
 
 
 /***/ }),
@@ -3080,17 +3039,6 @@ module.exports = require("react-offcanvas");
 
 /***/ }),
 
-/***/ "react-particles-js":
-/*!*************************************!*\
-  !*** external "react-particles-js" ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-particles-js");
-
-/***/ }),
-
 /***/ "react-toggle":
 /*!*******************************!*\
   !*** external "react-toggle" ***!
@@ -3099,6 +3047,17 @@ module.exports = require("react-particles-js");
 /***/ (function(module, exports) {
 
 module.exports = require("react-toggle");
+
+/***/ }),
+
+/***/ "semantic-ui-react":
+/*!************************************!*\
+  !*** external "semantic-ui-react" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("semantic-ui-react");
 
 /***/ }),
 
@@ -3125,4 +3084,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=products.js.map

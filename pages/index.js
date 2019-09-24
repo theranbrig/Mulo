@@ -29,7 +29,7 @@ const Home = () => {
             <img src="../static/Default Photoshop Size.png" alt="Theran Brigowatz Logo" className="title-image" />
             <h2>They loved it. You'll love it too.</h2>
             <button>
-              <Link href="/contact">
+              <Link href="/products">
                 <a>
                   Shop Now <i className="fas fa-arrow-right" />
                 </a>

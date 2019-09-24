@@ -88,65 +88,10 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./components/ContactLink.js":
-/*!***********************************!*\
-  !*** ./components/ContactLink.js ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/components/ContactLink.js";
-
-
-
-var ContactLink = function ContactLink(_ref) {
-  var link = _ref.link,
-      icon = _ref.icon,
-      name = _ref.name;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: link,
-    target: "_blank",
-    rel: "noopener noreferrer",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: icon,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, name));
-};
-
-ContactLink.propTypes = {
-  link: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
-  name: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
-  icon: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired
-};
-/* harmony default export */ __webpack_exports__["default"] = (ContactLink);
-
-/***/ }),
 
 /***/ "./components/Footer.js":
 /*!******************************!*\
@@ -290,212 +235,52 @@ Footer.propTypes = {
 
 /***/ }),
 
-/***/ "./components/Form.js":
-/*!****************************!*\
-  !*** ./components/Form.js ***!
-  \****************************/
+/***/ "./components/IconLink.js":
+/*!********************************!*\
+  !*** ./components/IconLink.js ***!
+  \********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
-/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _context_DarkContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./context/DarkContext */ "./components/context/DarkContext.js");
-
-
-var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/components/Form.js";
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/components/IconLink.js";
 
 
 
-
-var SuccessStyles = styled_components__WEBPACK_IMPORTED_MODULE_4___default.a.div.withConfig({
-  displayName: "Form__SuccessStyles",
-  componentId: "vd6jnd-0"
-})(["height:20px;p{font-size:18px;color:", ";}"], function (props) {
-  return props.theme.blue;
-});
-
-var encode = function encode(data) {
-  return _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1___default()(data).map(function (key) {
-    return "".concat(encodeURIComponent(key), "=").concat(encodeURIComponent(data[key]));
-  }).join('&');
+var IconLink = function IconLink(_ref) {
+  var link = _ref.link,
+      icon = _ref.icon,
+      name = _ref.name;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: link,
+    target: "_blank",
+    rel: "noopener noreferrer",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, name, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: icon,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }));
 };
 
-var ContactForm = function ContactForm() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(''),
-      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
-      name = _useState2[0],
-      setName = _useState2[1];
-
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(''),
-      _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState3, 2),
-      email = _useState4[0],
-      setEmail = _useState4[1];
-
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(''),
-      _useState6 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState5, 2),
-      message = _useState6[0],
-      setMessage = _useState6[1];
-
-  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(null),
-      _useState8 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState7, 2),
-      successMessage = _useState8[0],
-      setSuccessMessage = _useState8[1];
-
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_2__["useContext"])(_context_DarkContext__WEBPACK_IMPORTED_MODULE_5__["DarkContext"]),
-      darkMode = _useContext.darkMode;
-
-  function handleSubmit(e) {
-    fetch('/', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      body: encode({
-        'form-name': 'contact',
-        name: name,
-        email: email,
-        message: message
-      })
-    }).then(function () {
-      return setSuccessMessage('Thanks for getting in touch.  I will get back to you soon.');
-    }).catch(function (error) {
-      return console.log(error);
-    });
-    e.preventDefault();
-    setName('');
-    setEmail('');
-    setMessage('');
-  }
-
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "contact-form",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    },
-    __self: this
-  }, "Send A Quick Message Directly"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"], {
-    onSubmit: handleSubmit,
-    inverted: darkMode,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Group, {
-    widths: "equal",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Field, {
-    stackable: "true",
-    width: 8,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Input, {
-    name: "name",
-    type: "text",
-    placeholder: "Enter Name",
-    onChange: function onChange(e) {
-      return setName(e.target.value);
-    },
-    value: name,
-    required: true,
-    label: "Name",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Field, {
-    stackable: "true",
-    width: 8,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Input, {
-    name: "email",
-    type: "email",
-    placeholder: "Enter Email Address",
-    onChange: function onChange(e) {
-      return setEmail(e.target.value);
-    },
-    value: email,
-    label: "Email Address",
-    required: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59
-    },
-    __self: this
-  }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Group, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Field, {
-    name: "message",
-    control: semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["TextArea"],
-    placeholder: "Send a quick message to get in touch about development inquiries.",
-    label: "Message",
-    width: 16,
-    onChange: function onChange(e) {
-      return setMessage(e.target.value);
-    },
-    value: message,
-    required: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Button"], {
-    inverted: darkMode,
-    type: "submit",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82
-    },
-    __self: this
-  }, "Submit!")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(SuccessStyles, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 86
-    },
-    __self: this
-  }, successMessage && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 86
-    },
-    __self: this
-  }, successMessage)));
+IconLink.propTypes = {
+  link: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
+  name: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
+  icon: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired
 };
-
-/* harmony default export */ __webpack_exports__["default"] = (ContactForm);
+/* harmony default export */ __webpack_exports__["default"] = (IconLink);
 
 /***/ }),
 
@@ -813,7 +598,7 @@ var NavLinks = function NavLinks() {
     __self: this
   }, "Home")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
     activeClassName: "active",
-    href: "/portfolio",
+    href: "/products",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
@@ -1007,10 +792,10 @@ UserProvider.propTypes = {
 
 /***/ }),
 
-/***/ "./components/styles/ContactPageStyles.js":
-/*!************************************************!*\
-  !*** ./components/styles/ContactPageStyles.js ***!
-  \************************************************/
+/***/ "./components/styles/AboutPageStyles.js":
+/*!**********************************************!*\
+  !*** ./components/styles/AboutPageStyles.js ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1019,34 +804,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
-var ContactPageStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
-  displayName: "ContactPageStyles",
-  componentId: "h0god9-0"
-})(["display:grid;grid-template-columns:1fr;grid-template-rows:250px 2fr 1fr 4fr;padding:30px;align-items:center;text-align:center;background-color:", ";@media (max-width:900px){width:100%;grid-template-columns:100%;grid-template-rows:1fr 4fr 2fr 3fr;}.contact-title{img{width:20%;}h1,p{color:", ";font-family:", ";}h1{font-size:2rem;}p{font-size:1.5rem;}}div.social-icons{list-style-type:none;justify-items:center;align-items:center;text-align:center;padding:0;display:grid;grid-gap:30px;grid-template-columns:repeat(5,1fr);grid-template-rows:1fr;@media (max-width:900px){grid-template-columns:100%;grid-template-rows:repeat(5,1fr);}a{width:100%;p{padding:5px;font-size:1rem;color:", ";font-family:", ";}i{font-size:5rem;color:", ";&:hover{-webkit-text-stroke-width:1px;-webkit-text-stroke-color:", ";}}}}.bottom-writing{p{color:", ";font-size:1.5rem;font-family:", ";width:80%;margin-left:10%;@media (max-width:900px){width:100%;margin:0;}a{color:", ";}}}.form-area{width:60%;margin:20px 20%;font-family:", ";h2{color:", ";font-family:", ";}button{color:", " !important;margin:10px;}textarea{height:200px;}textarea,input{background-color:", " !important;}@media (max-width:900px){width:90%;margin:0;margin-left:5%;}label::after{color:", " !important;}}"], function (props) {
+var AboutPageStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "AboutPageStyles",
+  componentId: "sc-1wfdq0j-0"
+})(["width:100%;display:grid;grid-template-columns:2fr 5fr;grid-template-rows:1fr;justify-items:center;align-items:center;padding:40px 30px;background-color:", ";@media (max-width:900px){width:100%;grid-template-columns:100%;grid-template-rows:1fr minmax(500px,2fr);padding:10px;}@media (max-width:450px){grid-template-rows:1fr minmax(500px,3fr);}.about-sidebar{width:100%;align-self:start;@media (max-width:900px){align-self:center;}img{border-radius:50%;width:150px;margin-left:calc(50% - 75px);}.sidebar-links{a{font-family:", ";color:", ";font-size:1.5rem;display:block;padding:20px 0;width:60%;margin-left:20%;@media (max-width:900px){text-align:center;}}}h1{@media (min-width:900px){display:none;}}}.about-main{width:100%;color:", ";padding-bottom:50px;h1,h2{color:", ";text-align:center;}h1,h2,h3,li{font-family:", ";text-align:center;}h1{@media (max-width:900px){display:none;}}p{font-size:1.3rem;font-family:", ";color:", ";line-height:2rem;letter-spacing:0.05rem;@media (max-width:900px){width:95%;margin-left:2.5%;}}h2{font-size:1.9rem;}h3{font-size:1.7rem;color:", ";}ul{list-style-type:none;padding:0;}.daily-list{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr 1fr;grid-gap:20px;justify-items:center;align-items:center;text-align:center;@media (max-width:450px){width:100%;grid-template-columns:1fr 1fr;grid-template-rows:repeat(4,1fr);padding:10px;}i{font-size:4rem;}p{font-size:1.4rem;padding:5px;}}ul.secondary-skills{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(3,1fr);grid-gap:20px;justify-items:center;align-items:center;text-align:center;@media (max-width:450px){width:100%;grid-template-columns:1fr 1fr;grid-template-rows:repeat(6,1fr);padding:10px;}li{font-size:1.4rem;}}.skills-to-learn{p{text-align:center;padding:3px;}}}h1{text-align:center;color:", ";font-family:", ";font-size:3rem;text-transform:uppercase;}"], function (props) {
   return props.theme.black;
 }, function (props) {
-  return props.theme.white;
-}, function (props) {
-  return props.theme.raleFont;
-}, function (props) {
-  return props.theme.white;
-}, function (props) {
-  return props.theme.raleFont;
-}, function (props) {
-  return props.theme.blue;
-}, function (props) {
-  return props.theme.white;
-}, function (props) {
-  return props.theme.white;
-}, function (props) {
-  return props.theme.raleFont;
-}, function (props) {
-  return props.theme.blue;
-}, function (props) {
-  return props.theme.raleFont;
-}, function (props) {
-  return props.theme.white;
-}, function (props) {
   return props.theme.raleFont;
 }, function (props) {
   return props.theme.blue;
@@ -1054,8 +817,20 @@ var ContactPageStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a
   return props.theme.white;
 }, function (props) {
   return props.theme.blue;
+}, function (props) {
+  return props.theme.raleFont;
+}, function (props) {
+  return props.theme.raleFont;
+}, function (props) {
+  return props.theme.white;
+}, function (props) {
+  return props.theme.blue;
+}, function (props) {
+  return props.theme.blue;
+}, function (props) {
+  return props.theme.raleFont;
 });
-/* harmony default export */ __webpack_exports__["default"] = (ContactPageStyles);
+/* harmony default export */ __webpack_exports__["default"] = (AboutPageStyles);
 
 /***/ }),
 
@@ -2402,25 +2177,31 @@ module.exports = __webpack_require__(/*! ./dist/client/router */ "./node_modules
 
 /***/ }),
 
-/***/ "./pages/contact.js":
-/*!**************************!*\
-  !*** ./pages/contact.js ***!
-  \**************************/
+/***/ "./pages/about.js":
+/*!************************!*\
+  !*** ./pages/about.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next-server/head */ "next-server/head");
 /* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_server_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_Form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Form */ "./components/Form.js");
-/* harmony import */ var _components_ContactLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/ContactLink */ "./components/ContactLink.js");
-/* harmony import */ var _components_styles_ContactPageStyles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/styles/ContactPageStyles */ "./components/styles/ContactPageStyles.js");
-/* harmony import */ var _components_context_DarkContext__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/context/DarkContext */ "./components/context/DarkContext.js");
-var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/pages/contact.js";
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _static_graphql_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../static/graphql.svg */ "./static/graphql.svg");
+/* harmony import */ var _static_graphql_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_static_graphql_svg__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _static_graphqldark_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../static/graphqldark.svg */ "./static/graphqldark.svg");
+/* harmony import */ var _static_graphqldark_svg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_static_graphqldark_svg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_styles_AboutPageStyles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/styles/AboutPageStyles */ "./components/styles/AboutPageStyles.js");
+/* harmony import */ var _static_data__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../static/data */ "./static/data.js");
+/* harmony import */ var _components_IconLink__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/IconLink */ "./components/IconLink.js");
+/* harmony import */ var _components_context_DarkContext__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/context/DarkContext */ "./components/context/DarkContext.js");
+var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/pages/about.js";
 
 
 
@@ -2429,161 +2210,314 @@ var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/pages/contact.js
 
 
 
-var Contact = function Contact() {
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_components_context_DarkContext__WEBPACK_IMPORTED_MODULE_6__["DarkContext"]),
+
+
+
+var About = function About() {
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_2__["useContext"])(_components_context_DarkContext__WEBPACK_IMPORTED_MODULE_9__["DarkContext"]),
       darkMode = _useContext.darkMode;
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 15
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, "Theran Brigowatz | Contact")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_ContactPageStyles__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "contact-title",
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: darkMode ? 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_320/v1551529192/theran-logo.png' : 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_320/v1551529192/theran-logo-Original-dark.png',
-    alt: "Theran Brigowatz Logo",
+  }, "Theran Brigowatz | About Me")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_styles_AboutPageStyles__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: "about-sidebar",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, "Theran Brigowatz"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+    src: "https://res.cloudinary.com/dq7uyauun/image/upload/q_auto/v1551968239/IMG_1880.jpg",
+    alt: "Theran Brigowatz Profile",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: "sidebar-links",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
     },
     __self: this
-  }, "CONTACT THERAN"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    href: "/contact",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
     },
     __self: this
-  }, "Get a hold of me for any questions you may have.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "social-icons",
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, "Contact Me ", react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+    className: "fas fa-comment",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    link: "https://www.github.com/theranbrig",
-    icon: "fab fa-github",
-    name: "theranbrig",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    link: "https://www.twitter.com/wellBuilt",
-    icon: "fab fa-twitter",
-    name: "wellBuilt",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    link: "https://medium.com/@theran.brigowatz",
-    icon: "fab fa-medium-m",
-    name: "Theran Brigowatz",
+  }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    name: "Resume ",
+    link: "https://docs.google.com/document/d/1SUCN4YnYe4dDmCRN1bB_HOuhL9MsZyJNGaQaea3TJtY/edit?usp=sharing",
+    icon: "far fa-file",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 32
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    link: "https://www.linkedin.com/in/theran-brigowatz-a861b3133/",
-    icon: "fab fa-linkedin-in",
-    name: "Theran Brigowatz",
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    name: "GitHub Code ",
+    link: "https://github.com/theranbrig",
+    icon: "fab fa-github",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 37
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    link: "mailTo:theran.brigowatz@gmail.com",
-    icon: "far fa-envelope-open",
-    name: "theran.brigowatz@gmail.com",
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    name: "Twitter Musings ",
+    link: "https://twitter.com/wellBuilt",
+    icon: "fab fa-twitter",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 38
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "bottom-writing",
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    name: "Medium Blog ",
+    link: "https://medium.com/@theran.brigowatz",
+    icon: "fab fa-medium-m",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    name: "Linked In ",
+    link: "https://linkedin.com/in/theran-brigowatz",
+    icon: "fab fa-linkedin",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: "about-main",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 44
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "Theran Brigowatz"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45
     },
     __self: this
-  }, "I am available to discuss freelance, contract, and full-time work opportunities. Check out my", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://docs.google.com/document/d/1GOzEZ8lB-KF4j3GQCFPhZ7pdRygX6wl7fHr_pbYKQTw/edit?usp=sharing",
-    target: "_blank",
-    rel: "noopener noreferrer",
+  }, "About Me"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 46
     },
     __self: this
-  }, "resume."), ' ', "Please get in touch with me, or check out my", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://medium.com/@theran.brigowatz",
-    target: "_blank",
-    rel: "noopener noreferrer",
+  }, "I am a full stack web developer with an eye for design who decided to make a career change after more than a decade in the education industry. An education at Bloc has given me a love of all things Javascript on both the front end and the back end, but I am not afraid to take on new languages, frameworks, and challenges. I have found my passion for all things code and development."), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 52
     },
     __self: this
-  }, "blog"), ", with any questions, comments, or biting criticism that you may have.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "form-area",
+  }, "Coding has given me a new enthusiasm for a career that I love, after a decade of energetic kids and stacks of essays to grade, while teaching in South Korea. Since my childhood, I have had a passion to create, whether it be art, food, or DIY. My interest in new technology is something that I have always had a great curiosity in pursuing and learning. I am constantly pushing myself to learn and grow as programmer. I enjoy spending time with my family, traveling, cooking, brewing craft beer, and the Minnesota Golden Gophers."), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 59
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Form__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, "I am open to work in South Korea, the United States, or remote positions right now. Time zones are no restriction. With a newborn son who doesn't sleep much, I am always up. Drop me a line and get in touch about work opportunities."), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: "skills-box",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 64
     },
     __self: this
-  }))));
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65
+    },
+    __self: this
+  }, "Skills"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: "skill-list",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: this
+  }, "Daily Use:"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", {
+    className: "daily-list",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: this
+  }, _static_data__WEBPACK_IMPORTED_MODULE_7__["icons"].map(function (icon) {
+    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", {
+      key: icon.icon,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 70
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+      className: icon.icon,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 71
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 72
+      },
+      __self: this
+    }, icon.skill));
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75
+    },
+    __self: this
+  }, darkMode ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+    src: _static_graphql_svg__WEBPACK_IMPORTED_MODULE_4___default.a,
+    alt: "graphql",
+    style: {
+      height: '55px'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77
+    },
+    __self: this
+  }) : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+    src: _static_graphqldark_svg__WEBPACK_IMPORTED_MODULE_5___default.a,
+    alt: "graphql",
+    style: {
+      height: '55px'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 79
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81
+    },
+    __self: this
+  }, "GraphQL")))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: "skills-i-know",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 85
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 86
+    },
+    __self: this
+  }, "No Slouch With:"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", {
+    className: "secondary-skills",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87
+    },
+    __self: this
+  }, _static_data__WEBPACK_IMPORTED_MODULE_7__["skills"].map(function (skill) {
+    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", {
+      key: skill,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 89
+      },
+      __self: this
+    }, skill);
+  }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 93
+    },
+    __self: this
+  }, "Skills In the Pipeline:"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: "skills-to-learn",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 94
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 95
+    },
+    __self: this
+  }, "Give me your best shot. I'll take on anything else you throw at me.*"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 96
+    },
+    __self: this
+  }, "*Also Sausage Making and Charcuterie."))))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Contact);
+/* harmony default export */ __webpack_exports__["default"] = (About);
 
 /***/ }),
 
@@ -2763,14 +2697,36 @@ var users = [{
 
 /***/ }),
 
-/***/ 5:
+/***/ "./static/graphql.svg":
+/*!****************************!*\
+  !*** ./static/graphql.svg ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyBmaWxsPSJnYWluc2Jvcm8iIHJvbGU9ImltZyIgdmlld0JveD0iMCAwIDI0IDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0aXRsZT5HcmFwaFFMIGljb248L3RpdGxlPjxwYXRoIGQ9Ik0xNC4wNTEgMi43NTFsNC45MzUgMi44NWMuODE2LS44NTkgMi4xNzMtLjg5MyAzLjAzMi0uMDc3LjE0OC4xNC4yNzQuMzAxLjM3Ny40NzcuNTg5IDEuMDI4LjIzMiAyLjMzOS0uNzk2IDIuOTI4LS4xNzQuMS0uMzYxLjE3NS0uNTU4LjIyM3Y1LjY5OWMxLjE0Ni4yNzMgMS44NTQgMS40MjMgMS41OCAyLjU2OS0uMDQ4LjIwNC0uMTI3LjQtLjIzMi41ODEtLjU5MiAxLjAyMy0xLjkwMSAxLjM3NC0yLjkyNy43ODItLjE5Ni0uMTEzLS4zNzUtLjI1OS0uNTI2LS40MjlsLTQuOTA1IDIuODMyYy4zNzIgMS4xMjQtLjIzOCAyLjMzNS0xLjM2MSAyLjcwNi0uMjE3LjA3MS0uNDQyLjEwOC0uNjcuMTA4LTEuMTgxLjAwMS0yLjEzOS0uOTU1LTIuMTQtMi4xMzYgMC0uMjA1LjAyOS0uNDEuMDg4LS42MDlsLTQuOTM2LTIuODQ3Yy0uODE2Ljg1NC0yLjE3MS44ODctMy4wMjYuMDctLjg1NC0uODE2LS44ODYtMi4xNzEtLjA3LTMuMDI2LjI4My0uMjk3LjY0Ni0uNTA2IDEuMDQ0LS42MDNsLjAwMS01LjY5OWMtMS4xNS0uMjc2LTEuODU4LTEuNDMzLTEuNTgxLTIuNTg0LjA0Ny0uMTk4LjEyMy0uMzg5LjIyNC0uNTY2LjU5Mi0xLjAyNCAxLjkwMi0xLjM3NCAyLjkyNy0uNzgyLjE3Ny4xMDEuMzM5LjIyOC40OC4zNzdsNC45MzgtMi44NUM5LjYxMyAxLjYxMiAxMC4yNi40MjMgMTEuMzkuMDg4IDExLjU4Ny4wMjkgMTEuNzk0IDAgMTIgMGMxLjE4MS0uMDAxIDIuMTM5Ljk1NCAyLjE0IDIuMTM0LjAwMS4yMDktLjAzLjQxOC0uMDg5LjYxN3ptLS41MTUuODc3Yy0uMDE5LjAyMS0uMDM3LjAzOS0uMDU4LjA1OGw2LjQ2MSAxMS4xOWMuMDI2LS4wMDkuMDU2LS4wMTYuMDgyLS4wMjNWOS4xNDZjLTEuMTQ1LS4yODMtMS44NDItMS40NDItMS41NTgtMi41ODguMDA2LS4wMjQuMDEyLS4wNDkuMDE5LS4wNzJsLTQuOTQ2LTIuODU4em0tMy4wMTUuMDU5bC0uMDYtLjA2LTQuOTQ2IDIuODUyYy4zMjcgMS4xMzUtLjMyNyAyLjMxOC0xLjQ2MSAyLjY0NS0uMDI2LjAwOC0uMDUxLjAxNC0uMDc2LjAyMXY1LjcwOGwuMDg0LjAyMyA2LjQ2MS0xMS4xOS0uMDAyLjAwMXptMi4wNzYuNTA3Yy0uMzkuMTEyLS44MDMuMTEyLTEuMTkyIDBsLTYuNDYgMTEuMTg5Yy4yOTQuMjgzLjUwMi42NDUuNiAxLjA0MWgxMi45MTFjLjA5Ny0uMzk4LjMwNy0uNzYxLjYwMy0xLjA0NEwxMi41OTcgNC4xOTR6bS45ODYgMTYuMjI3bDQuOTEzLTIuODM4Yy0uMDE1LS4wNDctLjAyNy0uMDk0LS4wMzgtLjE0Mkg1LjU0MmwtLjAyMS4wODMgNC45MzkgMi44NTJjLjM4OC0uNDA0LjkzNC0uNjUzIDEuNTQtLjY1My42MjcgMCAxLjE5LjI2OSAxLjU4My42OTh6Ii8+PC9zdmc+Cg=="
+
+/***/ }),
+
+/***/ "./static/graphqldark.svg":
 /*!********************************!*\
-  !*** multi ./pages/contact.js ***!
+  !*** ./static/graphqldark.svg ***!
   \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMjMyMzIzIiByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R3JhcGhRTCBpY29uPC90aXRsZT48cGF0aCBkPSJNMTQuMDUxIDIuNzUxbDQuOTM1IDIuODVjLjgxNi0uODU5IDIuMTczLS44OTMgMy4wMzItLjA3Ny4xNDguMTQuMjc0LjMwMS4zNzcuNDc3LjU4OSAxLjAyOC4yMzIgMi4zMzktLjc5NiAyLjkyOC0uMTc0LjEtLjM2MS4xNzUtLjU1OC4yMjN2NS42OTljMS4xNDYuMjczIDEuODU0IDEuNDIzIDEuNTggMi41NjktLjA0OC4yMDQtLjEyNy40LS4yMzIuNTgxLS41OTIgMS4wMjMtMS45MDEgMS4zNzQtMi45MjcuNzgyLS4xOTYtLjExMy0uMzc1LS4yNTktLjUyNi0uNDI5bC00LjkwNSAyLjgzMmMuMzcyIDEuMTI0LS4yMzggMi4zMzUtMS4zNjEgMi43MDYtLjIxNy4wNzEtLjQ0Mi4xMDgtLjY3LjEwOC0xLjE4MS4wMDEtMi4xMzktLjk1NS0yLjE0LTIuMTM2IDAtLjIwNS4wMjktLjQxLjA4OC0uNjA5bC00LjkzNi0yLjg0N2MtLjgxNi44NTQtMi4xNzEuODg3LTMuMDI2LjA3LS44NTQtLjgxNi0uODg2LTIuMTcxLS4wNy0zLjAyNi4yODMtLjI5Ny42NDYtLjUwNiAxLjA0NC0uNjAzbC4wMDEtNS42OTljLTEuMTUtLjI3Ni0xLjg1OC0xLjQzMy0xLjU4MS0yLjU4NC4wNDctLjE5OC4xMjMtLjM4OS4yMjQtLjU2Ni41OTItMS4wMjQgMS45MDItMS4zNzQgMi45MjctLjc4Mi4xNzcuMTAxLjMzOS4yMjguNDguMzc3bDQuOTM4LTIuODVDOS42MTMgMS42MTIgMTAuMjYuNDIzIDExLjM5LjA4OCAxMS41ODcuMDI5IDExLjc5NCAwIDEyIDBjMS4xODEtLjAwMSAyLjEzOS45NTQgMi4xNCAyLjEzNC4wMDEuMjA5LS4wMy40MTgtLjA4OS42MTd6bS0uNTE1Ljg3N2MtLjAxOS4wMjEtLjAzNy4wMzktLjA1OC4wNThsNi40NjEgMTEuMTljLjAyNi0uMDA5LjA1Ni0uMDE2LjA4Mi0uMDIzVjkuMTQ2Yy0xLjE0NS0uMjgzLTEuODQyLTEuNDQyLTEuNTU4LTIuNTg4LjAwNi0uMDI0LjAxMi0uMDQ5LjAxOS0uMDcybC00Ljk0Ni0yLjg1OHptLTMuMDE1LjA1OWwtLjA2LS4wNi00Ljk0NiAyLjg1MmMuMzI3IDEuMTM1LS4zMjcgMi4zMTgtMS40NjEgMi42NDUtLjAyNi4wMDgtLjA1MS4wMTQtLjA3Ni4wMjF2NS43MDhsLjA4NC4wMjMgNi40NjEtMTEuMTktLjAwMi4wMDF6bTIuMDc2LjUwN2MtLjM5LjExMi0uODAzLjExMi0xLjE5MiAwbC02LjQ2IDExLjE4OWMuMjk0LjI4My41MDIuNjQ1LjYgMS4wNDFoMTIuOTExYy4wOTctLjM5OC4zMDctLjc2MS42MDMtMS4wNDRMMTIuNTk3IDQuMTk0em0uOTg2IDE2LjIyN2w0LjkxMy0yLjgzOGMtLjAxNS0uMDQ3LS4wMjctLjA5NC0uMDM4LS4xNDJINS41NDJsLS4wMjEuMDgzIDQuOTM5IDIuODUyYy4zODgtLjQwNC45MzQtLjY1MyAxLjU0LS42NTMuNjI3IDAgMS4xOS4yNjkgMS41ODMuNjk4eiIvPjwvc3ZnPgo="
+
+/***/ }),
+
+/***/ 6:
+/*!******************************!*\
+  !*** multi ./pages/about.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/theranbrigowatz/WebDev/projects/mulo/pages/contact.js */"./pages/contact.js");
+module.exports = __webpack_require__(/*! /Users/theranbrigowatz/WebDev/projects/mulo/pages/about.js */"./pages/about.js");
 
 
 /***/ }),
@@ -3050,17 +3006,6 @@ module.exports = require("react-toggle");
 
 /***/ }),
 
-/***/ "semantic-ui-react":
-/*!************************************!*\
-  !*** external "semantic-ui-react" ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("semantic-ui-react");
-
-/***/ }),
-
 /***/ "styled-components":
 /*!************************************!*\
   !*** external "styled-components" ***!
@@ -3084,4 +3029,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=contact.js.map
+//# sourceMappingURL=about.js.map

@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/contact.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/products.js"],{
 
 /***/ "./components/ContactLink.js":
 /*!***********************************!*\
@@ -717,7 +717,7 @@ var NavLinks = function NavLinks() {
     __self: this
   }, "Home")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
     activeClassName: "active",
-    href: "/portfolio",
+    href: "/products",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
@@ -25308,21 +25308,21 @@ module.exports = __webpack_require__(/*! ./dist/lib/head */ "./node_modules/next
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=%2FUsers%2Ftheranbrigowatz%2FWebDev%2Fprojects%2Fmulo%2Fpages%2Fcontact.js!./":
-/*!**********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=%2FUsers%2Ftheranbrigowatz%2FWebDev%2Fprojects%2Fmulo%2Fpages%2Fcontact.js ***!
-  \**********************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fproducts&absolutePagePath=%2FUsers%2Ftheranbrigowatz%2FWebDev%2Fprojects%2Fmulo%2Fpages%2Fproducts.js!./":
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fproducts&absolutePagePath=%2FUsers%2Ftheranbrigowatz%2FWebDev%2Fprojects%2Fmulo%2Fpages%2Fproducts.js ***!
+  \************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/contact", function() {
-      var page = __webpack_require__(/*! ./pages/contact.js */ "./pages/contact.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/products", function() {
+      var page = __webpack_require__(/*! ./pages/products.js */ "./pages/products.js")
       if(true) {
-        module.hot.accept(/*! ./pages/contact.js */ "./pages/contact.js", function() {
-          if(!next.router.components["/contact"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/contact.js */ "./pages/contact.js")
-          next.router.update("/contact", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/products.js */ "./pages/products.js", function() {
+          if(!next.router.components["/products"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/products.js */ "./pages/products.js")
+          next.router.update("/products", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -66703,7 +66703,7 @@ var partitionHTMLProps = function partitionHTMLProps(props) {
 /*!*************************************************************!*\
   !*** ./node_modules/semantic-ui-react/dist/es/lib/index.js ***!
   \*************************************************************/
-/*! exports provided: AutoControlledComponent, getChildMapping, mergeChildMappings, childrenUtils, useKeyOnly, useKeyOrValueAndKey, useValueAndKey, useMultipleProp, useTextAlignProp, useVerticalAlignProp, useWidthProp, customPropTypes, debug, makeDebugger, eventStack, createShorthand, createShorthandFactory, createHTMLDivision, createHTMLIframe, createHTMLImage, createHTMLInput, createHTMLLabel, createHTMLParagraph, getUnhandledProps, getElementType, handleRef, htmlInputAttrs, htmlInputEvents, htmlInputProps, htmlImageProps, partitionHTMLProps, isBrowser, doesNodeContainClick, leven, createPaginationItems, SUI, numberToWordMap, numberToWord, normalizeOffset, normalizeTransitionDuration, objectDiff */
+/*! exports provided: AutoControlledComponent, getChildMapping, mergeChildMappings, childrenUtils, useKeyOnly, useKeyOrValueAndKey, useValueAndKey, useMultipleProp, useTextAlignProp, useVerticalAlignProp, useWidthProp, customPropTypes, debug, makeDebugger, eventStack, getUnhandledProps, getElementType, handleRef, htmlInputAttrs, htmlInputEvents, htmlInputProps, htmlImageProps, partitionHTMLProps, isBrowser, doesNodeContainClick, leven, createPaginationItems, SUI, numberToWordMap, numberToWord, normalizeOffset, normalizeTransitionDuration, objectDiff, createShorthand, createShorthandFactory, createHTMLDivision, createHTMLIframe, createHTMLImage, createHTMLInput, createHTMLLabel, createHTMLParagraph */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -83187,10 +83187,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/contact.js":
-/*!**************************!*\
-  !*** ./pages/contact.js ***!
-  \**************************/
+/***/ "./pages/products.js":
+/*!***************************!*\
+  !*** ./pages/products.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -83205,7 +83205,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_ContactLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/ContactLink */ "./components/ContactLink.js");
 /* harmony import */ var _components_styles_ContactPageStyles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/styles/ContactPageStyles */ "./components/styles/ContactPageStyles.js");
 /* harmony import */ var _components_context_DarkContext__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/context/DarkContext */ "./components/context/DarkContext.js");
-var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/pages/contact.js";
+var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/pages/products.js";
 
 
 
@@ -83549,13 +83549,13 @@ var users = [{
 /***/ }),
 
 /***/ 3:
-/*!**************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fcontact&absolutePagePath=%2FUsers%2Ftheranbrigowatz%2FWebDev%2Fprojects%2Fmulo%2Fpages%2Fcontact.js ***!
-  \**************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fproducts&absolutePagePath=%2FUsers%2Ftheranbrigowatz%2FWebDev%2Fprojects%2Fmulo%2Fpages%2Fproducts.js ***!
+  \****************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fcontact&absolutePagePath=%2FUsers%2Ftheranbrigowatz%2FWebDev%2Fprojects%2Fmulo%2Fpages%2Fcontact.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=%2FUsers%2Ftheranbrigowatz%2FWebDev%2Fprojects%2Fmulo%2Fpages%2Fcontact.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fproducts&absolutePagePath=%2FUsers%2Ftheranbrigowatz%2FWebDev%2Fprojects%2Fmulo%2Fpages%2Fproducts.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fproducts&absolutePagePath=%2FUsers%2Ftheranbrigowatz%2FWebDev%2Fprojects%2Fmulo%2Fpages%2Fproducts.js!./");
 
 
 /***/ }),
@@ -83572,4 +83572,4 @@ module.exports = dll_d346b9d5e7f8e3f71f40;
 /***/ })
 
 },[[3,"static/runtime/webpack.js"]]]));;
-//# sourceMappingURL=contact.js.map
+//# sourceMappingURL=products.js.map

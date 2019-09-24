@@ -52,11 +52,13 @@ const HomePageStyles = styled.div`
         margin-top: 25%;
         color: ${props => props.theme.black};
         text-shadow: 1px 2px 2px #ffffff67, 3px 3px 3px #ffffff45;
+        letter-spacing: 0.1rem;
+        font-size: 1.8rem;
       }
       button {
         padding: 12px;
         border: none;
-        font-size: 20px;
+        font-size: 1.5rem;
         font-family: ${props => props.theme.rightFont};
         background: ${props => props.theme.blue};
         letter-spacing: 0.1rem;
@@ -70,11 +72,12 @@ const HomePageStyles = styled.div`
     p {
       color: ${props => props.theme.white};
       font-family: ${props => props.theme.raleFont};
-      font-size: 24px;
+      font-size: 1.7rem;
       text-align: center;
       padding: 10px;
       border-top: 2px solid ${props => props.theme.blue};
       border-bottom: 2px solid ${props => props.theme.blue};
+      letter-spacing: 0.1rem;
     }
     a {
       color: ${props => props.theme.blue};
