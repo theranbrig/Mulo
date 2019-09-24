@@ -21,7 +21,7 @@ const Home = () => {
         <div className="main-content">
           <div className="side-pictures" />
           <div className="title-box">
-            <img src="../static/Default Photoshop Size.png" alt="Theran Brigowatz Logo" className="title-image" />
+            <h1>Mulo</h1>
             <h2>They loved it. You'll love it too.</h2>
             <button>
               <Link href="/products">

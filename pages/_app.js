@@ -2,6 +2,7 @@ import React from 'react';
 import App, { Container } from 'next/app';
 import DarkProvider from '../components/context/DarkContext';
 import UserProvider from '../components/context/UserContext';
+import CartProvider from '../components/context/CartContext';
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -19,11 +20,13 @@ export default class MyApp extends App {
 
     return (
       <UserProvider>
-        <DarkProvider>
-          <Container>
-            <Component {...pageProps} />
-          </Container>
-        </DarkProvider>
+        <CartProvider>
+          <DarkProvider>
+            <Container>
+              <Component {...pageProps} />
+            </Container>
+          </DarkProvider>
+        </CartProvider>
       </UserProvider>
     );
   }

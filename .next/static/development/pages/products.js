@@ -164,7 +164,7 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/components/Layout.js";
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  body {\n    margin: 0 auto;\n  }\n  /* raleway-300 - latin */\n  @font-face {\n    font-family: 'Raleway';\n    font-style: normal;\n    font-weight: 300;\n    src: url('../static/fonts/raleway-v14-latin-300.eot'); /* IE9 Compat Modes */\n    src: local('Raleway Light'), local('Raleway-Light'),\n        url('../static/fonts/raleway-v14-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */\n        url('../static/fonts/raleway-v14-latin-300.woff2') format('woff2'), /* Super Modern Browsers */\n        url('../static/fonts/raleway-v14-latin-300.woff') format('woff'), /* Modern Browsers */\n        url('../static/fonts/raleway-v14-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */\n        url('../static/fonts/raleway-v14-latin-300.svg#Raleway') format('svg'); /* Legacy iOS */\n  }\n  /* raleway-regular - latin */\n  @font-face {\n    font-family: 'Raleway';\n    font-style: normal;\n    font-weight: 400;\n    src: url('../static/fonts/raleway-v14-latin-regular.eot'); /* IE9 Compat Modes */\n    src: local('Raleway'), local('Raleway-Regular'),\n        url('../static/fonts/raleway-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */\n        url('../static/fonts/raleway-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */\n        url('../static/fonts/raleway-v14-latin-regular.woff') format('woff'), /* Modern Browsers */\n        url('../static/fonts/raleway-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */\n        url('../static/fonts/raleway-v14-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */\n  }\n  raleway-600 - latin\n  @font-face {\n    font-family: 'Raleway';\n    font-style: normal;\n    font-weight: 600;\n    src: url('../static/fonts/raleway-v14-latin-600.eot'); /* IE9 Compat Modes */\n    src: local('Raleway SemiBold'), local('Raleway-SemiBold'),\n        url('../static/fonts/raleway-v14-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */\n        url('../static/fonts/raleway-v14-latin-600.woff2') format('woff2'), /* Super Modern Browsers */\n        url('../static/fonts/raleway-v14-latin-600.woff') format('woff'), /* Modern Browsers */\n        url('../static/fonts/raleway-v14-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */\n        url('../static/fonts/raleway-v14-latin-600.svg#Raleway') format('svg'); /* Legacy iOS */\n  }\n  /* righteous-regular - latin */\n  @font-face {\n    font-family: 'Righteous';\n    font-style: normal;\n    font-weight: 400;\n    src: url('../static/fonts/righteous-v8-latin-regular.eot'); /* IE9 Compat Modes */\n    src: local('Righteous'), local('Righteous-Regular'),\n        url('../static/fonts/righteous-v8-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */\n        url('../static/fonts/righteous-v8-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */\n        url('../static/fonts/righteous-v8-latin-regular.woff') format('woff'), /* Modern Browsers */\n        url('../static/fonts/righteous-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */\n        url('../static/fonts/righteous-v8-latin-regular.svg#Righteous') format('svg'); /* Legacy iOS */\n  }\n\n  /* roboto-regular - latin */\n  @font-face {\n    font-family: 'Roboto';\n    font-style: normal;\n    font-weight: 400;\n    src: url('../static/fonts/roboto-v20-latin-regular.eot'); /* IE9 Compat Modes */\n    src: local('Roboto'), local('Roboto-Regular'),\n        url('../static/fonts/roboto-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */\n        url('../static/fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */\n        url('../static/fonts/roboto-v20-latin-regular.woff') format('woff'), /* Modern Browsers */\n        url('../static/fonts/roboto-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */\n        url('../static/fonts/roboto-v20-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */\n  }\n  /* roboto-300 - latin */\n  @font-face {\n    font-family: 'Roboto';\n    font-style: normal;\n    font-weight: 300;\n    src: url('../static/fonts/roboto-v20-latin-300.eot'); /* IE9 Compat Modes */\n    src: local('Roboto Light'), local('Roboto-Light'),\n        url('../static/fonts/roboto-v20-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */\n        url('../static/fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Super Modern Browsers */\n        url('../static/fonts/roboto-v20-latin-300.woff') format('woff'), /* Modern Browsers */\n        url('../static/fonts/roboto-v20-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */\n        url('../static/fonts/roboto-v20-latin-300.svg#Roboto') format('svg'); /* Legacy iOS */\n  }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  body {\n    margin: 0 auto;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -183,7 +183,7 @@ var darkTheme = {
   darkBlack: '#454545',
   black: '#343434',
   white: 'white',
-  blue: 'rgb(23, 211, 211)',
+  blue: '#70e979',
   transparent: '#13131394',
   raleFont: 'Raleway',
   robFont: 'Roboto',
@@ -210,13 +210,13 @@ var Layout = function Layout(props) {
     theme: darkMode ? darkTheme : lightTheme,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 40
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(GlobalStyle, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122
+      lineNumber: 42
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -224,14 +224,14 @@ var Layout = function Layout(props) {
     darkMode: darkMode,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123
+      lineNumber: 43
     },
     __self: this
   }), props.children, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], {
     darkMode: darkMode,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 45
     },
     __self: this
   })));
@@ -353,48 +353,48 @@ var Nav = function Nav(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_NavStyles__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "navigation",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "main-logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_5__["default"], {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
     src: "../static/Default Photoshop Size.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "desktop-nav-links",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 22
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_NavLinks__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 23
     },
     __self: this
   }))));
@@ -423,6 +423,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Link */ "./components/Link.js");
 /* harmony import */ var _context_DarkContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./context/DarkContext */ "./components/context/DarkContext.js");
 /* harmony import */ var _context_UserContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./context/UserContext */ "./components/context/UserContext.js");
+/* harmony import */ var _context_CartContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./context/CartContext */ "./components/context/CartContext.js");
 var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/components/NavLinks.js";
 
 
@@ -430,27 +431,29 @@ var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/components/NavLi
 
 
 
-var NavLinks = function NavLinks() {
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_context_DarkContext__WEBPACK_IMPORTED_MODULE_3__["DarkContext"]),
-      darkMode = _useContext.darkMode,
-      toggleDarkMode = _useContext.toggleDarkMode;
 
-  var _useContext2 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_context_UserContext__WEBPACK_IMPORTED_MODULE_4__["UserContext"]),
-      user = _useContext2.user,
-      userLoading = _useContext2.userLoading;
+var NavLinks = function NavLinks() {
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_context_UserContext__WEBPACK_IMPORTED_MODULE_4__["UserContext"]),
+      user = _useContext.user,
+      userLoading = _useContext.userLoading;
+
+  var _useContext2 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_context_CartContext__WEBPACK_IMPORTED_MODULE_5__["CartContext"]),
+      cart = _useContext2.cart,
+      addToCart = _useContext2.addToCart,
+      setCart = _useContext2.setCart;
 
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
     activeClassName: "active",
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 14
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 15
     },
     __self: this
   }, "Home")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -458,13 +461,13 @@ var NavLinks = function NavLinks() {
     href: "/products",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 17
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 18
     },
     __self: this
   }, "Browse")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -472,19 +475,19 @@ var NavLinks = function NavLinks() {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 20
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 21
     },
     __self: this
   }, "About")), userLoading && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 23
     },
     __self: this
   }, "Loading..."), user ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -492,13 +495,13 @@ var NavLinks = function NavLinks() {
     href: "/contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 25
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 26
     },
     __self: this
   }, "Contact")) : react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -506,19 +509,93 @@ var NavLinks = function NavLinks() {
     href: "/contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 29
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 30
     },
     __self: this
-  }, "Sign In")));
+  }, "Cart (", cart.length, ")")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (NavLinks);
+
+/***/ }),
+
+/***/ "./components/context/CartContext.js":
+/*!*******************************************!*\
+  !*** ./components/context/CartContext.js ***!
+  \*******************************************/
+/*! exports provided: CartContext, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CartContext", function() { return CartContext; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+
+var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/components/context/CartContext.js";
+
+
+var CartContext = react__WEBPACK_IMPORTED_MODULE_1___default.a.createContext();
+
+var CartProvider = function CartProvider(props) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+      cart = _useState2[0],
+      setCart = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null),
+      _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState3, 2),
+      cartError = _useState4[0],
+      setCartError = _useState4[1];
+
+  var addToCart = function addToCart(id) {
+    if (cart === null) {
+      setCart([id]);
+    } else {
+      var tempCart = cart;
+
+      if (!tempCart.some(function (cartItem) {
+        return cartItem === id;
+      })) {
+        tempCart.push(id);
+        setCart(tempCart);
+      } else {
+        setCartError('Item already in cart!');
+      }
+
+      console.log(tempCart);
+    }
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    console.log('CONTEXT EFFECT');
+  }, [cart.length]);
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(CartContext.Provider, {
+    value: {
+      cart: cart,
+      addToCart: addToCart
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, props.children);
+};
+
+CartProvider.propTypes = {
+  children: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object.isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (CartProvider);
 
 /***/ }),
 
@@ -731,7 +808,7 @@ __webpack_require__.r(__webpack_exports__);
 var ProductsPageStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "ProductsPageStyles",
   componentId: "sc-13hke90-0"
-})(["text-align:center;background-color:", ";min-height:90vh;.products-list{display:grid;grid-template-columns:repeat(6,1fr);grid-gap:3%;margin:5%;}h1{color:", ";font-family:", ";font-weight:300;padding:20px;font-size:2.5rem;span{color:", ";font-family:", ";}}h3{color:", ";font-family:", ";font-size:1.4rem;}p{color:", ";font-family:", ";font-size:1.1rem;}.original-price{text-decoration:line-through;color:#939393;}img{max-height:205px;}"], function (props) {
+})(["text-align:center;background-color:", ";min-height:90vh;.products-list{display:grid;grid-template-columns:repeat(6,1fr);grid-gap:3%;margin:5%;}h1{color:", ";font-family:", ";font-weight:300;padding:20px;font-size:2.5rem;span{color:", ";font-family:", ";}}h3{color:", ";font-family:", ";font-size:1.4rem;margin-bottom:5px;}p{color:", ";font-family:", ";font-size:1.1rem;margin-bottom:5px;}.original-price{text-decoration:line-through;color:#939393;}img{max-height:205px;}"], function (props) {
   return props.theme.black;
 }, function (props) {
   return props.theme.white;
@@ -39704,7 +39781,7 @@ var Contact = function Contact() {
       lineNumber: 19
     },
     __self: this
-  }, "MULO"), " Products")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Mulo"), " Products")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "products-list",
     __source: {
       fileName: _jsxFileName,
@@ -39713,6 +39790,7 @@ var Contact = function Contact() {
     __self: this
   }, _static_data__WEBPACK_IMPORTED_MODULE_5__["products"].map(function (product) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      key: product.id,
       href: {
         pathname: '/item',
         query: {

@@ -16,12 +16,12 @@ const Contact = () => {
       <ProductsPageStyles>
         <div className="title">
           <h1>
-            Browse <span className="title-logo">MULO</span> Products
+            Browse <span className="title-logo">Mulo</span> Products
           </h1>
         </div>
         <div className="products-list">
           {products.map(product => (
-            <Link href={{ pathname: '/item', query: { id: product.id } }}>
+            <Link key={product.id} href={{ pathname: '/item', query: { id: product.id } }}>
               <a>
                 <div>
                   <img src={product.image} />
@@ -32,7 +32,6 @@ const Contact = () => {
                   </p>
                   <p>Rating: {product.rating}</p>
                 </div>
-
               </a>
             </Link>
           ))}

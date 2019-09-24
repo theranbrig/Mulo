@@ -1,5 +1,79 @@
 ((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/_app.js"],{
 
+/***/ "./components/context/CartContext.js":
+/*!*******************************************!*\
+  !*** ./components/context/CartContext.js ***!
+  \*******************************************/
+/*! exports provided: CartContext, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CartContext", function() { return CartContext; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+
+var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/components/context/CartContext.js";
+
+
+var CartContext = react__WEBPACK_IMPORTED_MODULE_1___default.a.createContext();
+
+var CartProvider = function CartProvider(props) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+      cart = _useState2[0],
+      setCart = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null),
+      _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState3, 2),
+      cartError = _useState4[0],
+      setCartError = _useState4[1];
+
+  var addToCart = function addToCart(id) {
+    if (cart === null) {
+      setCart([id]);
+    } else {
+      var tempCart = cart;
+
+      if (!tempCart.some(function (cartItem) {
+        return cartItem === id;
+      })) {
+        tempCart.push(id);
+        setCart(tempCart);
+      } else {
+        setCartError('Item already in cart!');
+      }
+
+      console.log(tempCart);
+    }
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    console.log('CONTEXT EFFECT');
+  }, [cart.length]);
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(CartContext.Provider, {
+    value: {
+      cart: cart,
+      addToCart: addToCart
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, props.children);
+};
+
+CartProvider.propTypes = {
+  children: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object.isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (CartProvider);
+
+/***/ }),
+
 /***/ "./components/context/DarkContext.js":
 /*!*******************************************!*\
   !*** ./components/context/DarkContext.js ***!
@@ -10287,6 +10361,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _components_context_DarkContext__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/context/DarkContext */ "./components/context/DarkContext.js");
 /* harmony import */ var _components_context_UserContext__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/context/UserContext */ "./components/context/UserContext.js");
+/* harmony import */ var _components_context_CartContext__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/context/CartContext */ "./components/context/CartContext.js");
 
 
 
@@ -10296,6 +10371,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/pages/_app.js";
+
 
 
 
@@ -10321,28 +10397,34 @@ function (_App) {
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_context_UserContext__WEBPACK_IMPORTED_MODULE_11__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_context_DarkContext__WEBPACK_IMPORTED_MODULE_10__["default"], {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 22
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_9__["Container"], {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_context_CartContext__WEBPACK_IMPORTED_MODULE_12__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 23
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, pageProps, {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_context_DarkContext__WEBPACK_IMPORTED_MODULE_10__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 24
         },
         __self: this
-      })))));
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_9__["Container"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, pageProps, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }))))));
     }
   }], [{
     key: "getInitialProps",

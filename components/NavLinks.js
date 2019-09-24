@@ -1,12 +1,14 @@
 import Toggle from 'react-toggle';
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Link from './Link';
 import { DarkContext } from './context/DarkContext';
 import { UserContext } from './context/UserContext';
+import { CartContext } from './context/CartContext';
 
 const NavLinks = () => {
-  const { darkMode, toggleDarkMode } = useContext(DarkContext);
   const { user, userLoading } = useContext(UserContext);
+  const { cart, addToCart, setCart } = useContext(CartContext);
+
   return (
     <>
       <Link activeClassName="active" href="/">
@@ -25,7 +27,7 @@ const NavLinks = () => {
         </Link>
       ) : (
         <Link activeClassName="active" href="/contact">
-          <a>Sign In</a>
+          <a>Cart ({cart.length})</a>
         </Link>
       )}
     </>

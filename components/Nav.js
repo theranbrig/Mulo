@@ -10,6 +10,7 @@ import { DarkContext } from './context/DarkContext';
 const Nav = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { darkMode } = useContext(DarkContext);
+
   return (
     <NavStyles>
       <div className="navigation">

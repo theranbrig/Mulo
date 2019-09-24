@@ -43,8 +43,13 @@ const HomePageStyles = styled.div`
         url('https://images.unsplash.com/photo-1541327883457-a5c8214cc9fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1614&q=80');
       background-size: cover;
       height: 600px;
-      img {
-        margin-top: 5%;
+      width: 100%;
+      h1 {
+        padding-top: 5%;
+        font-size: 8rem;
+        font-family: ${props => props.theme.rightFont};
+        color: ${props => props.theme.blue};
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
       }
       h2 {
         text-align: center;

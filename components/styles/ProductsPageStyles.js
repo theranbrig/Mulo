@@ -25,11 +25,14 @@ const ProductsPageStyles = styled.div`
     color: ${props => props.theme.blue};
     font-family: ${props => props.theme.raleFont};
     font-size: 1.4rem;
+    margin-bottom: 5px;
   }
   p {
     color: ${props => props.theme.white};
     font-family: ${props => props.theme.raleFont};
     font-size: 1.1rem;
+    margin-bottom: 5px;
+
   }
   .original-price {
     text-decoration: line-through;
