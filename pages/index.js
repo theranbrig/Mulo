@@ -1,14 +1,9 @@
 /* eslint-disable no-console */
 /* eslint-disable react/no-unescaped-entities */
 import Link from 'next/link';
-import Particles from 'react-particles-js';
 import React, { useContext } from 'react';
 import Head from 'next/head';
-import ParticleParams from '../static/ParticleParams.json';
 import Layout from '../components/Layout';
-import data from '../static/data';
-import ProjectCard from '../components/ProjectCard';
-import IconLink from '../components/IconLink';
 import HomePageStyles from '../components/styles/HomePageStyles';
 import { DarkContext } from '../components/context/DarkContext';
 import { UserContext } from '../components/context/UserContext';
@@ -39,7 +34,7 @@ const Home = () => {
         </div>
         <div className="divider">
           <p>
-            Welcome to the new world of fashion.{' '}
+            Try it on before you buy it with <span>MULO AR</span>. <br />
             <Link href="/contact">
               <a>See Our Latest Fashion Choices</a>
             </Link>

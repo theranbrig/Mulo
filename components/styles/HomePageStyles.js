@@ -79,6 +79,10 @@ const HomePageStyles = styled.div`
       border-bottom: 2px solid ${props => props.theme.blue};
       letter-spacing: 0.1rem;
     }
+    span {
+      font-family: ${props => props.theme.rightFont};
+      color: ${props => props.theme.blue};
+    }
     a {
       color: ${props => props.theme.blue};
     }

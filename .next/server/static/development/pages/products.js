@@ -93,61 +93,6 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/ContactLink.js":
-/*!***********************************!*\
-  !*** ./components/ContactLink.js ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/components/ContactLink.js";
-
-
-
-var ContactLink = function ContactLink(_ref) {
-  var link = _ref.link,
-      icon = _ref.icon,
-      name = _ref.name;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: link,
-    target: "_blank",
-    rel: "noopener noreferrer",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: icon,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, name));
-};
-
-ContactLink.propTypes = {
-  link: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
-  name: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
-  icon: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired
-};
-/* harmony default export */ __webpack_exports__["default"] = (ContactLink);
-
-/***/ }),
-
 /***/ "./components/Footer.js":
 /*!******************************!*\
   !*** ./components/Footer.js ***!
@@ -287,215 +232,6 @@ Footer.propTypes = {
   darkMode: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
-
-/***/ }),
-
-/***/ "./components/Form.js":
-/*!****************************!*\
-  !*** ./components/Form.js ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
-/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _context_DarkContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./context/DarkContext */ "./components/context/DarkContext.js");
-
-
-var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/components/Form.js";
-
-
-
-
-var SuccessStyles = styled_components__WEBPACK_IMPORTED_MODULE_4___default.a.div.withConfig({
-  displayName: "Form__SuccessStyles",
-  componentId: "vd6jnd-0"
-})(["height:20px;p{font-size:18px;color:", ";}"], function (props) {
-  return props.theme.blue;
-});
-
-var encode = function encode(data) {
-  return _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1___default()(data).map(function (key) {
-    return "".concat(encodeURIComponent(key), "=").concat(encodeURIComponent(data[key]));
-  }).join('&');
-};
-
-var ContactForm = function ContactForm() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(''),
-      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
-      name = _useState2[0],
-      setName = _useState2[1];
-
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(''),
-      _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState3, 2),
-      email = _useState4[0],
-      setEmail = _useState4[1];
-
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(''),
-      _useState6 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState5, 2),
-      message = _useState6[0],
-      setMessage = _useState6[1];
-
-  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(null),
-      _useState8 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState7, 2),
-      successMessage = _useState8[0],
-      setSuccessMessage = _useState8[1];
-
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_2__["useContext"])(_context_DarkContext__WEBPACK_IMPORTED_MODULE_5__["DarkContext"]),
-      darkMode = _useContext.darkMode;
-
-  function handleSubmit(e) {
-    fetch('/', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      body: encode({
-        'form-name': 'contact',
-        name: name,
-        email: email,
-        message: message
-      })
-    }).then(function () {
-      return setSuccessMessage('Thanks for getting in touch.  I will get back to you soon.');
-    }).catch(function (error) {
-      return console.log(error);
-    });
-    e.preventDefault();
-    setName('');
-    setEmail('');
-    setMessage('');
-  }
-
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "contact-form",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    },
-    __self: this
-  }, "Send A Quick Message Directly"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"], {
-    onSubmit: handleSubmit,
-    inverted: darkMode,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Group, {
-    widths: "equal",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Field, {
-    stackable: "true",
-    width: 8,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Input, {
-    name: "name",
-    type: "text",
-    placeholder: "Enter Name",
-    onChange: function onChange(e) {
-      return setName(e.target.value);
-    },
-    value: name,
-    required: true,
-    label: "Name",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Field, {
-    stackable: "true",
-    width: 8,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Input, {
-    name: "email",
-    type: "email",
-    placeholder: "Enter Email Address",
-    onChange: function onChange(e) {
-      return setEmail(e.target.value);
-    },
-    value: email,
-    label: "Email Address",
-    required: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59
-    },
-    __self: this
-  }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Group, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"].Field, {
-    name: "message",
-    control: semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["TextArea"],
-    placeholder: "Send a quick message to get in touch about development inquiries.",
-    label: "Message",
-    width: 16,
-    onChange: function onChange(e) {
-      return setMessage(e.target.value);
-    },
-    value: message,
-    required: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Button"], {
-    inverted: darkMode,
-    type: "submit",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82
-    },
-    __self: this
-  }, "Submit!")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(SuccessStyles, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 86
-    },
-    __self: this
-  }, successMessage && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 86
-    },
-    __self: this
-  }, successMessage)));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (ContactForm);
 
 /***/ }),
 
@@ -825,7 +561,7 @@ var NavLinks = function NavLinks() {
       lineNumber: 16
     },
     __self: this
-  }, "Products")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, "Browse")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
     activeClassName: "active",
     href: "/about",
     __source: {
@@ -1007,58 +743,6 @@ UserProvider.propTypes = {
 
 /***/ }),
 
-/***/ "./components/styles/ContactPageStyles.js":
-/*!************************************************!*\
-  !*** ./components/styles/ContactPageStyles.js ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
-
-var ContactPageStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
-  displayName: "ContactPageStyles",
-  componentId: "h0god9-0"
-})(["display:grid;grid-template-columns:1fr;grid-template-rows:250px 2fr 1fr 4fr;padding:30px;align-items:center;text-align:center;background-color:", ";@media (max-width:900px){width:100%;grid-template-columns:100%;grid-template-rows:1fr 4fr 2fr 3fr;}.contact-title{img{width:20%;}h1,p{color:", ";font-family:", ";}h1{font-size:2rem;}p{font-size:1.5rem;}}div.social-icons{list-style-type:none;justify-items:center;align-items:center;text-align:center;padding:0;display:grid;grid-gap:30px;grid-template-columns:repeat(5,1fr);grid-template-rows:1fr;@media (max-width:900px){grid-template-columns:100%;grid-template-rows:repeat(5,1fr);}a{width:100%;p{padding:5px;font-size:1rem;color:", ";font-family:", ";}i{font-size:5rem;color:", ";&:hover{-webkit-text-stroke-width:1px;-webkit-text-stroke-color:", ";}}}}.bottom-writing{p{color:", ";font-size:1.5rem;font-family:", ";width:80%;margin-left:10%;@media (max-width:900px){width:100%;margin:0;}a{color:", ";}}}.form-area{width:60%;margin:20px 20%;font-family:", ";h2{color:", ";font-family:", ";}button{color:", " !important;margin:10px;}textarea{height:200px;}textarea,input{background-color:", " !important;}@media (max-width:900px){width:90%;margin:0;margin-left:5%;}label::after{color:", " !important;}}"], function (props) {
-  return props.theme.black;
-}, function (props) {
-  return props.theme.white;
-}, function (props) {
-  return props.theme.raleFont;
-}, function (props) {
-  return props.theme.white;
-}, function (props) {
-  return props.theme.raleFont;
-}, function (props) {
-  return props.theme.blue;
-}, function (props) {
-  return props.theme.white;
-}, function (props) {
-  return props.theme.white;
-}, function (props) {
-  return props.theme.raleFont;
-}, function (props) {
-  return props.theme.blue;
-}, function (props) {
-  return props.theme.raleFont;
-}, function (props) {
-  return props.theme.white;
-}, function (props) {
-  return props.theme.raleFont;
-}, function (props) {
-  return props.theme.blue;
-}, function (props) {
-  return props.theme.white;
-}, function (props) {
-  return props.theme.blue;
-});
-/* harmony default export */ __webpack_exports__["default"] = (ContactPageStyles);
-
-/***/ }),
-
 /***/ "./components/styles/FooterStyles.js":
 /*!*******************************************!*\
   !*** ./components/styles/FooterStyles.js ***!
@@ -1126,6 +810,44 @@ var NavStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.wit
   return props.theme.white;
 });
 /* harmony default export */ __webpack_exports__["default"] = (NavStyles);
+
+/***/ }),
+
+/***/ "./components/styles/ProductsPageStyles.js":
+/*!*************************************************!*\
+  !*** ./components/styles/ProductsPageStyles.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
+
+var ProductsPageStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "ProductsPageStyles",
+  componentId: "sc-13hke90-0"
+})(["text-align:center;background-color:", ";min-height:90vh;.products-list{display:grid;grid-template-columns:repeat(6,1fr);grid-gap:3%;margin:5%;}h1{color:", ";font-family:", ";font-weight:300;padding:20px;font-size:2.5rem;span{color:", ";font-family:", ";}}h3{color:", ";font-family:", ";font-size:1.4rem;}p{color:", ";font-family:", ";font-size:1.1rem;}.original-price{text-decoration:line-through;color:#939393;}img{max-height:205px;}"], function (props) {
+  return props.theme.black;
+}, function (props) {
+  return props.theme.white;
+}, function (props) {
+  return props.theme.raleFont;
+}, function (props) {
+  return props.theme.blue;
+}, function (props) {
+  return props.theme.rightFont;
+}, function (props) {
+  return props.theme.blue;
+}, function (props) {
+  return props.theme.raleFont;
+}, function (props) {
+  return props.theme.white;
+}, function (props) {
+  return props.theme.raleFont;
+});
+/* harmony default export */ __webpack_exports__["default"] = (ProductsPageStyles);
 
 /***/ }),
 
@@ -2415,11 +2137,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next-server/head */ "next-server/head");
 /* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_server_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_Form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Form */ "./components/Form.js");
-/* harmony import */ var _components_ContactLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/ContactLink */ "./components/ContactLink.js");
-/* harmony import */ var _components_styles_ContactPageStyles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/styles/ContactPageStyles */ "./components/styles/ContactPageStyles.js");
-/* harmony import */ var _components_context_DarkContext__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/context/DarkContext */ "./components/context/DarkContext.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_styles_ProductsPageStyles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/styles/ProductsPageStyles */ "./components/styles/ProductsPageStyles.js");
+/* harmony import */ var _static_data__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../static/data */ "./static/data.js");
 var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/pages/products.js";
 
 
@@ -2428,12 +2150,12 @@ var _jsxFileName = "/Users/theranbrigowatz/WebDev/projects/mulo/pages/products.j
 
 
 
-
 var Contact = function Contact() {
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_components_context_DarkContext__WEBPACK_IMPORTED_MODULE_6__["DarkContext"]),
-      darkMode = _useContext.darkMode;
+  var calculateMoney = function calculateMoney(amount) {
+    return "$".concat(amount / 100);
+  };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
@@ -2451,135 +2173,104 @@ var Contact = function Contact() {
       lineNumber: 14
     },
     __self: this
-  }, "Theran Brigowatz | Contact")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_ContactPageStyles__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "MULO | Products")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_ProductsPageStyles__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "contact-title",
+    className: "title",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: darkMode ? 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_320/v1551529192/theran-logo.png' : 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_320/v1551529192/theran-logo-Original-dark.png',
-    alt: "Theran Brigowatz Logo",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+  }, "Browse ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "title-logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 19
     },
     __self: this
-  }, "CONTACT THERAN"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "MULO"), " Products")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "products-list",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 22
     },
     __self: this
-  }, "Get a hold of me for any questions you may have.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "social-icons",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    link: "https://www.github.com/theranbrig",
-    icon: "fab fa-github",
-    name: "theranbrig",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    link: "https://www.twitter.com/wellBuilt",
-    icon: "fab fa-twitter",
-    name: "wellBuilt",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    link: "https://medium.com/@theran.brigowatz",
-    icon: "fab fa-medium-m",
-    name: "Theran Brigowatz",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    link: "https://www.linkedin.com/in/theran-brigowatz-a861b3133/",
-    icon: "fab fa-linkedin-in",
-    name: "Theran Brigowatz",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    link: "mailTo:theran.brigowatz@gmail.com",
-    icon: "far fa-envelope-open",
-    name: "theran.brigowatz@gmail.com",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "bottom-writing",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: this
-  }, "I am available to discuss freelance, contract, and full-time work opportunities. Check out my", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://docs.google.com/document/d/1GOzEZ8lB-KF4j3GQCFPhZ7pdRygX6wl7fHr_pbYKQTw/edit?usp=sharing",
-    target: "_blank",
-    rel: "noopener noreferrer",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  }, "resume."), ' ', "Please get in touch with me, or check out my", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://medium.com/@theran.brigowatz",
-    target: "_blank",
-    rel: "noopener noreferrer",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55
-    },
-    __self: this
-  }, "blog"), ", with any questions, comments, or biting criticism that you may have.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "form-area",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Form__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: this
+  }, _static_data__WEBPACK_IMPORTED_MODULE_5__["products"].map(function (product) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      href: {
+        pathname: '/item',
+        query: {
+          id: product.id
+        }
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: product.image,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    }, product.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      className: "original-price",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }, calculateMoney(product.originalPrice)), " |", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      className: "discount-price",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31
+      },
+      __self: this
+    }, calculateMoney(product.price))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }, "Rating: ", product.rating))));
   }))));
 };
 
@@ -2591,162 +2282,38 @@ var Contact = function Contact() {
 /*!************************!*\
   !*** ./static/data.js ***!
   \************************/
-/*! exports provided: default, icons, skills, users */
+/*! exports provided: products, users */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "icons", function() { return icons; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "skills", function() { return skills; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "products", function() { return products; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "users", function() { return users; });
-/* harmony default export */ __webpack_exports__["default"] = ([{
-  title: 'Grouper',
-  technology: 'Next.js React, Graphql, Prisma',
-  created: 'Winter 2018',
-  description: 'Realtime Group Shopping App',
-  slug: 'grouper',
-  image: 'https://i.imgur.com/AdmJjnY.png',
-  logo: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1551527103/Fish.png',
-  extendedDescription: 'Group shopping and lists made easy. Check them off as you go and get real-time updates as you shop. Split up and let others get items. Mark them off as you find them. This was built to utilize Next.js with React on the frontend for quick SSR React Components and caching. Apollo Boost works to connect the backend data to the client side, as well has hold local state. All GraphQL Mutations and Queries are handled through Apollo. The API uses GraphQL with a GraphQL server to connect to a Prisma database that is built using PostgreSQL. The relational data structure allows for quick querying to the server. A testing suite was built using Jest and Enzyme to make sure that everything is up and running properly. Snapshot testing was integrated as well. The app is deployed using Heroku on both the front and back ends. This was a quick five day build meant to act as a coding challenge interview, so it is far from perfect yet.',
-  gitLink: 'https://github.com/theranbrig/grouper',
-  deployLink: 'https://grouper-frontend.herokuapp.com/',
-  screenShots: ['https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_300/v1559996358/Grouper_New_Home.png', 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_300/v1559996358/Grouper_List.png', 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_300/v1559996358/Grouper_Add_Item.png'],
-  icon: 'fas fa-fish',
-  tech: ['devicon-react-original', 'graphql', 'devicon-javascript-plain', 'devicon-nodejs-plain', 'devicon-css3-plain', 'devicon-heroku-plain', 'devicon-postgresql-plain']
+var products = [{
+  id: '1',
+  name: 'Vintage Green T-Shirt',
+  image: 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_300/v1569306209/mens-slow-down-kelly-t-shirt_798d28aa-7e30-4ac9-a4ef-e7d1b0aa7ae0_2000x.jpg',
+  rating: 95,
+  problems: ['Small Concealed Hole: Arm Pit', 'Small Food Stain: Yellow - Bottom Hem'],
+  seller: 'getMyMoney22',
+  originalPrice: 1899,
+  price: 1599,
+  canOffer: true,
+  category: 'tshirt',
+  about: "Lorem ipsum dolor amet poutine franzen whatever normcore small batch pitchfork put a bird on it skateboard. Taiyaki post-ironic fashion axe hell of wolf kombucha, vape you probably haven't heard of them vegan poke microdosing. Truffaut lo-fi brooklyn, copper mug pork belly palo santo tumblr +1. Literally jianbing ramps waistcoat banh mi, viral intelligentsia 8-bit. Put a bird on it portland four loko pop-up ugh trust fund brooklyn. Vexillologist affogato pabst pok pok you probably haven't heard of them pug vegan fingerstache post-ironic actually man braid. Unicorn +1 8-bit hella YOLO, hashtag tousled pork belly waistcoat aesthetic pour-over bitters post-ironic glossier."
 }, {
-  title: 'Grown',
-  technology: 'Next.js React, Graphql, Prisma',
-  created: 'Fall 2018',
-  description: 'Farmers Market Shopping App',
-  slug: 'grown-farms',
-  image: 'https://i.imgur.com/G6UWh3c.png',
-  logo: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1551526992/Farm.png',
-  extendedDescription: 'Grown is a full-stack JavaScript project built upon React and GraphQL. It is a place for farmers to sell their products online and for consumers to order products online for later pick up at farmer markets. It is built primarily with React and Apollo on the client side, with GraphQL Yoga amd Prisma connected on the backend.As of right now the farms are available as stores where users can order products. Markets and search are planned features for the next sprint and are coming later. Also I plan on updating the styling in order to fit in more with the feel of the app and product. It is a work in progress still. I welcome feedback and suggestions.',
-  gitLink: 'https://github.com/theranbrig/grown',
-  deployLink: 'https://grownfarms.herokuapp.com/',
-  screenShots: ['https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551967944/3_-_eBabmvL.png', 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551967943/2_-_kQF1X9z.png', 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551967943/1_-_BmMq37W.png'],
-  icon: 'fas fa-leaf',
-  tech: ['devicon-react-original', 'graphql', 'devicon-javascript-plain', 'devicon-nodejs-plain', 'devicon-css3-plain', 'devicon-heroku-plain', 'devicon-postgresql-plain']
-}, {
-  title: 'Wiki-What',
-  technology: 'Express, Node, SQL',
-  created: 'Summer 2018',
-  description: 'RESTful Wiki Collaboration Site',
-  slug: 'wiki-what',
-  image: 'https://i.imgur.com/zQDt9KE.png',
-  logo: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1551526992/Globe.png',
-  extendedDescription: 'Full RESTful API site for wiki collaboration.  Users are able to upgrade to premium features through Stripe payments.  There is full authentication and crediential checking for premium feature users.  The entire app has been unit and integration tested with Jasmine.  There are full CRUD capabilities for both users and Wikis.  It uses a markdown editor with uniform styling.  I also worked to make sure that the Wiki styling is both clean, modern and stylish; something that is often missing from most Wiki sites.  Though it is primarily meant to be used as a full desktop site, it is mobile responsive.  This was primarily an back-end project to build a complete REST app.  All back-end components are modular and separated for easy scaling and feature addition.  It uses PostgreSQL as a database for wikis and users, with validation that is handled by Passport',
-  gitLink: 'https://github.com/theranbrig/wiki-what',
-  deployLink: 'https://wikiwhat-theranbrig.herokuapp.com/',
-  screenShots: ['https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551967917/MKnPtcn.jpg'],
-  icon: 'fas fa-globe',
-  tech: ['devicon-javascript-plain', 'devicon-express-original', 'devicon-nodejs-plain', 'devicon-css3-plain', 'devicon-heroku-plain', 'devicon-postgresql-plain', 'devicon-jasmine-plain']
-}, {
-  title: 'Vane',
-  technology: 'React, Firebase, MaterialUI',
-  created: 'Spring 2018',
-  description: 'React Mobile Weather PWA',
-  slug: 'vane',
-  image: 'https://i.imgur.com/0cvRvQK.png',
-  logo: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1551526992/Cloud.png',
-  extendedDescription: 'This quick and simple mobile app was built in order to solidify my foundation for ReactJS in my developer boot camp. I built this as an extra project on my own to make sure that I had a good handle on the basic concepts of ReactJS.  This was first built by fetching data from the Yahoo Weather API and using Axios to handle the API requests. Axios ensured that I can handle my API requests with each search that is performed, without further complicating my app life cycle. Components were then rendered out using ReactJS and Material UI. Material UI was used to help with a responsive UX and UI, and helped to maintain styling. I also added styling that that uses a color palette based on the temperature from hot to cold. Screenshots of the color palette in the app can be found here. Finally I have added Firebase in to allow for user authentication via Google. Users may save cities for quick access when signed in.',
-  gitLink: 'https://github.com/theranbrig/weather-app',
-  deployLink: 'https://vane.netlify.com',
-  screenShots: ['https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551967962/3_-_ucAXrQ2.png', 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551967961/1_-_rGAttGs.png', 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551967961/2_-_rSS6yu3.png'],
-  icon: 'fas fa-cloud-sun-rain',
-  tech: ['devicon-javascript-plain', 'devicon-react-original', 'devicon-css3-plain', 'devicon-html5-plain']
-}, // {
-//   title: 'NintenDB',
-//   technology: 'React, Firebase, Node, Express',
-//   created: 'Spring 2019',
-//   description: 'IGDB.com API Project',
-//   slug: 'nintendb',
-//   image: 'https://i.imgur.com/0cvRvQK.png',
-//   logo: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1551526992/Cloud.png',
-//   extendedDescription:
-//     "This was built to utilize IGDB.com's APIcalyse and their API.  It is a simple express app on the backend that pulls in data from their API.  All views are done using React on the frontend and it is styled with NES.css for a bit of old school 8-bit styling.  Users may save games after going through random classic games.  User authentication and the database layer is built using Google Firebase for rapid development.",
-//   gitLink: 'https://github.com/theranbrig/igdb-project',
-//   screenShots: [
-//     'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_74,w_689/v1559473764/Screen_Shot_2019-06-02_at_8.06.50_PM.png',
-//     'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_662/v1559473764/Screen_Shot_2019-06-02_at_8.07.55_PM.png',
-//     'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_741/v1559473764/Screen_Shot_2019-06-02_at_8.06.40_PM.png',
-//   ],
-//   icon: 'fas fa-gamepad',
-//   tech: [
-//     'devicon-javascript-plain',
-//     'devicon-react-original',
-//     'devicon-css3-plain',
-//     'devicon-html5-plain',
-//     'devicon-nodejs-plain',
-//     'devicon-heroku-plain',
-//   ],
-// },
-{
-  title: 'Bloc Jams',
-  technology: 'React, SemanticUI',
-  created: 'Spring 2018',
-  description: 'React Spotify-like Clone',
-  slug: 'bloc-jams',
-  image: 'https://i.imgur.com/F3bHADS.png',
-  logo: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1551526991/Headphones.png',
-  extendedDescription: 'Bloc Jams is a my first React SPA that was built as part of my curriculum through Bloc. It is an SPA for albums and music that uses React Router to create a responsive page that works on mobile as well. I started out by building the basic routes with React Router. After that I built up the functionality of the library, album, and music player controls using React. The page was then finally styled through the use of Semantic UI - React. This was my first time working to build an SPA completely with React. It was a learning experience in managing state and props, while building a responsive webpage.',
-  gitLink: 'https://github.com/theranbrig/bloc-jams',
-  deployLink: 'https://bloc-jams-theran.netlify.com/',
-  screenShots: ['https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551969057/1_-_gQ4Hrit.png', 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551969413/2_-_tsYxipW.png', 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551969059/3_-_p9Pd8c9.png'],
-  icon: 'fas fa-headphones-alt',
-  tech: ['devicon-javascript-plain', 'devicon-react-original', 'devicon-css3-plain', 'devicon-html5-plain']
-}, {
-  title: 'Bloc Chat',
-  technology: 'React, Firebase, MaterialUI',
-  created: 'Spring 2018',
-  description: 'Web Chat with Firebase and React',
-  slug: 'bloc-chat',
-  image: 'https://i.imgur.com/0CEeP9p.png',
-  logo: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1551526992/Chat.png',
-  extendedDescription: 'Bloc Chat was built as my second project using React. This was part of my curriculum with Bloc.io and was a great experience in learning the concepts of how to build a React app. The app was first built by creating a list of chat rooms that dynamically updates when a user adds a new chat room. After that, displayed messages for each chat room were generated. In order to create messages as a registered user, Firebase was added for user authentication and to save messages for each user. All messages only display within the given chat room in which they were created. Messages and chat rooms may be deleted and edited when necessary. The page was styled using Material UI. It is mobile responsive, though it is best used on a desktop platform. This was my first time using a database with React and it was a good experience in further learning React and showing the power that it has when used with a dynamic database like Firebase.',
-  gitLink: 'https://github.com/theranbrig/bloc-chat',
-  deployLink: 'https://bloc-chat-theran.netlify.com',
-  screenShots: ['https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551968890/xTD2VWq.png'],
-  icon: 'far fa-comment-alt',
-  tech: ['devicon-javascript-plain', 'devicon-react-original', 'devicon-css3-plain', 'devicon-html5-plain']
-}, {
-  title: 'News Bites',
-  technology: 'Vanilla Javascript, SemanticUI',
-  created: 'April 2018',
-  description: 'News Site using Vanilla JavaScript',
-  slug: 'news-bites',
-  image: 'https://i.imgur.com/D54iVFi.png',
-  logo: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1551526991/Forks.png',
-  extendedDescription: 'The purpose of this assignment was to use an API for the first time and display it on a page. I used the fetch method to make AJAX requests and built the site using HTML, CSS, and Vanilla JavaScript. I used News API to get headlines from major news categories and the page can be updated and viewed easily. It was my first time using an API in conjunction with HTML. I plan on refactoring some of the code in the future, adding a search function, and making a few design tweeks along the way.',
-  gitLink: 'https://github.com/theranbrig/api_news_bites',
-  deployLink: 'https://news-bites.netlify.com',
-  screenShots: ['https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_600/v1551967917/oBIjR9C.png'],
-  icon: 'fas fa-utensils',
-  tech: ['devicon-javascript-plain', 'devicon-css3-plain', 'devicon-html5-plain']
-}]);
-var icons = [{
-  skill: 'HTML',
-  icon: 'devicon-html5-plain'
-}, {
-  skill: 'CSS',
-  icon: 'devicon-css3-plain'
-}, {
-  skill: 'JavaScript',
-  icon: 'devicon-javascript-plain'
-}, {
-  skill: 'React',
-  icon: 'devicon-react-original'
-}, {
-  skill: 'Node.js',
-  icon: 'devicon-nodejs-plain'
-}, {
-  skill: 'Git',
-  icon: 'devicon-github-plain'
-}, {
-  skill: 'PostgreSQL',
-  icon: 'devicon-postgresql-plain'
+  id: '2',
+  name: 'Vintage Queen T-Shirt',
+  image: 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_300/v1569287364/Vintage_Queen.jpg',
+  rating: 100,
+  problems: [],
+  seller: 'vintageShirtMan',
+  originalPrice: 1599,
+  price: 1299,
+  canOffer: false,
+  category: 'tshirt',
+  about: "Lorem ipsum dolor amet poutine franzen whatever normcore small batch pitchfork put a bird on it skateboard. Taiyaki post-ironic fashion axe hell of wolf kombucha, vape you probably haven't heard of them vegan poke microdosing. Truffaut lo-fi brooklyn, copper mug pork belly palo santo tumblr +1. Literally jianbing ramps waistcoat banh mi, viral intelligentsia 8-bit. Put a bird on it portland four loko pop-up ugh trust fund brooklyn. Vexillologist affogato pabst pok pok you probably haven't heard of them pug vegan fingerstache post-ironic actually man braid. Unicorn +1 8-bit hella YOLO, hashtag tousled pork belly waistcoat aesthetic pour-over bitters post-ironic glossier."
 }];
-var skills = ['Express', 'MVC Architecture', 'Jasmine', 'Jest', 'MongoDB', 'Sass', 'Styled Components', 'Semantic UI', 'Bootstrap', 'Material UI', 'Heroku', 'Photoshop'];
 var users = [{
   id: '1',
   username: 'trendyman',
@@ -3047,17 +2614,6 @@ module.exports = require("react-offcanvas");
 /***/ (function(module, exports) {
 
 module.exports = require("react-toggle");
-
-/***/ }),
-
-/***/ "semantic-ui-react":
-/*!************************************!*\
-  !*** external "semantic-ui-react" ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("semantic-ui-react");
 
 /***/ }),
 
