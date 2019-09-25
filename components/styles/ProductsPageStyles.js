@@ -15,7 +15,7 @@ const ProductsPageStyles = styled.div`
   }
   h1 {
     color: ${props => props.theme.white};
-    font-family: ${props => props.theme.raleFont};
+    font-family: ${props => props.theme.rightFont};
     font-weight: 300;
     padding: 20px;
     font-size: 2.5rem;
@@ -45,7 +45,7 @@ const ProductsPageStyles = styled.div`
     height: 205px;
     width: 205px;
     border-radius: 50%;
-    border: 2px solid ${props => props.theme.blue};
+    border: 4px solid #454545;
   }
 `;
 

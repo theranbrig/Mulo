@@ -9,7 +9,7 @@ const CartStyles = styled.div`
   min-height: 90vh;
   h1 {
     text-align: center;
-    font-family: ${props => props.theme.raleFont};
+    font-family: ${props => props.theme.rightFont};
     color: ${props => props.theme.white};
     font-weight: 300;
     font-size: 3rem;
@@ -43,7 +43,7 @@ const CartStyles = styled.div`
       height: 150px;
       width: 150px;
       border-radius: 50%;
-      border: 2px solid ${props => props.theme.blue};
+      border: 3px solid ${props => props.theme.white};
     }
     .information {
       display: grid;
@@ -56,7 +56,7 @@ const CartStyles = styled.div`
         border: none;
         padding: 10px;
         font-family: ${props => props.theme.rightFont};
-        color: ${props => props.theme.white};
+        color: ${props => props.theme.black};
         background: ${props => props.theme.blue};
         border: 2px solid transparent;
         font-size: 1.3rem;

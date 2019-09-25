@@ -13,13 +13,19 @@ const Nav = ({ children }) => {
 
   return (
     <NavStyles>
-      <div className="navigation">
-        <div className="main-logo">
-          <Link href="/">
-            <img src="../static/Default Photoshop Size.png" />
+      <div className='navigation'>
+        <div className='main-logo'>
+          <Link href='/'>
+            <div className='nav-logo'>
+              <img
+                src='https://res.cloudinary.com/dq7uyauun/image/upload/v1569432088/untitled_5.jpg'
+                alt='logo'
+              />
+              <h1>MULO</h1>
+            </div>
           </Link>
         </div>
-        <div className="desktop-nav-links">
+        <div className='desktop-nav-links'>
           <NavLinks />
         </div>
       </div>

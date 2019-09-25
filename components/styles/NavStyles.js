@@ -11,13 +11,12 @@ const NavStyles = styled.div`
       width: auto;
       margin: 10px;
     }
-    border-bottom: 3px solid ${props => props.theme.blue};
   }
   .desktop-nav-links {
     height: 100%;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
     grid-gap: 20px;
@@ -27,18 +26,18 @@ const NavStyles = styled.div`
     }
     a {
       line-height: 40px;
-      color: ${props => props.theme.blue};
+      color: ${props => props.theme.white};
       font-size: 1.5rem;
-      font-family: ${props => props.theme.raleFont};
+      font-family: ${props => props.theme.rightFont};
       border-bottom: transparent 1px solid;
       padding-bottom: 1px;
       text-decoration: none;
       &:hover {
-        border-bottom: ${props => props.theme.white} 1px solid;
+        border-bottom: ${props => props.theme.blue} 1px solid;
       }
     }
     .active {
-      color: ${props => props.theme.white};
+      color: ${props => props.theme.blue};
     }
   }
   div.main-logo img {
@@ -46,6 +45,16 @@ const NavStyles = styled.div`
     color: ${props => props.theme.white};
     height: 40px;
     padding: 0 0 0 20px;
+    margin: 0;
+  }
+  .nav-logo {
+    h1 {
+      font-family: ${props => props.theme.rightFont};
+      margin: 0;
+      display: inline;
+      font-size: 3rem;
+      padding: 0 0 5px 10px;
+    }
   }
 `;
 

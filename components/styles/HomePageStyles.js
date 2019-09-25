@@ -11,7 +11,6 @@ const HomePageStyles = styled.div`
     align-items: center;
     justify-items: center;
     height: 600px;
-    border-bottom: 2px solid ${props => props.theme.blue};
     @media (max-width: 900px) {
       grid-template-columns: 1fr;
     }
@@ -22,13 +21,12 @@ const HomePageStyles = styled.div`
       color: ${props => props.theme.blue};
     }
     .side-pictures {
-      background: linear-gradient(#ffffff67, #ffffff32),
-        url('https://images.unsplash.com/photo-1503160814947-656030efef06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80');
+      background: url('https://images.unsplash.com/photo-1565679871226-33cfa91bedae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=582&q=80');
       background-size: cover;
       margin: 0;
       width: 100%;
       height: 600px;
-      border-right: 2px solid ${props => props.theme.blue};
+
       img {
         height: 100%;
         width: 100%;
@@ -39,8 +37,8 @@ const HomePageStyles = styled.div`
     }
     .title-box {
       text-align: center;
-      background: linear-gradient(#ffffff67, #ffffff32),
-        url('https://images.unsplash.com/photo-1541327883457-a5c8214cc9fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1614&q=80');
+      background: url('https://images.unsplash.com/photo-1472806426350-603610d85659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
+      background-repeat: no-repeat;
       background-size: cover;
       height: 600px;
       width: 100%;
@@ -61,14 +59,15 @@ const HomePageStyles = styled.div`
         font-size: 1.8rem;
       }
       button {
-        padding: 12px;
+        padding: 12px 20px;
         border: none;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-family: ${props => props.theme.rightFont};
-        background: ${props => props.theme.blue};
+        background: #ffffff76;
         letter-spacing: 0.1rem;
+        margin-top: 45%;
         a {
-          color: ${props => props.theme.white};
+          color: ${props => props.theme.black};
         }
       }
     }
@@ -80,8 +79,6 @@ const HomePageStyles = styled.div`
       font-size: 1.7rem;
       text-align: center;
       padding: 10px;
-      border-top: 2px solid ${props => props.theme.blue};
-      border-bottom: 2px solid ${props => props.theme.blue};
       letter-spacing: 0.1rem;
     }
     span {

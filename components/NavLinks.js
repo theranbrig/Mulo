@@ -16,13 +16,16 @@ const NavLinks = () => {
   return (
     <>
       <Link activeClassName="active" href="/">
-        <a>Home</a>
+        <a>HOME</a>
       </Link>
       <Link activeClassName="active" href="/products">
-        <a>Browse</a>
+        <a>BROWSE</a>
       </Link>
       <Link activeClassName="active" href="/cart">
-        <a>Cart ({cart.length})</a>
+        <a>CART ({cart.length})</a>
+      </Link>
+      <Link activeClassName="active" href="/cart">
+        <a>LOGIN</a>
       </Link>
     </>
   );

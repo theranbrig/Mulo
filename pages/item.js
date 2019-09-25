@@ -37,7 +37,7 @@ const Item = ({ query }) => {
               Loading <span>Mulo</span> Product
             </h1>
             <div className='spinner'>
-              <CircleLoader sizeUnit='px' size={200} color='#70e979' />
+              <CircleLoader sizeUnit='px' size={200} color='#438948' />
             </div>
           </div>
         </ItemPageStyles>
@@ -92,9 +92,7 @@ const Item = ({ query }) => {
                   <button className='add-button' onClick={() => addToCart(item.id)}>
                     Add To Cart
                   </button>
-                  <button className='offer-button' disabled={!item.canOffer}>
-                    Make An Offer
-                  </button>
+                  <button className='offer-button'>Make An Offer</button>
                 </div>
                 <div className='more-information'>
                   <h3>

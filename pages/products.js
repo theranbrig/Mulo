@@ -16,7 +16,7 @@ const Contact = () => {
       <ProductsPageStyles>
         <div className="title">
           <h1>
-            Browse <span className="title-logo">Mulo</span> Products
+            Browse <span className="title-logo">MULO</span> Products
           </h1>
         </div>
         <div className="products-list">
@@ -27,7 +27,6 @@ const Contact = () => {
                   <img src={product.image} />
                   <h3>{product.name}</h3>
                   <p>
-                    <span className="original-price">{calculateMoney(product.originalPrice)}</span> |{' '}
                     <span className="discount-price">{calculateMoney(product.price)}</span>
                   </p>
                   <p>Rating: {product.rating}</p>

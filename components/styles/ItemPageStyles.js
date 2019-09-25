@@ -47,18 +47,19 @@ const ItemPageStyles = styled.div`
     margin: 20px 0;
     font-size: 1.5rem;
     font-family: ${props => props.theme.rightFont};
-    border: 2px solid transparent;
+    border: 3px solid ${props => props.theme.blue};
     &:hover {
-      border: 2px solid #438948;
+      border: 3px solid ${props => props.theme.white};
     }
   }
   .add-button {
-    color: ${props => props.theme.white};
+    color: ${props => props.theme.black};
     background: ${props => props.theme.blue};
   }
   .offer-button {
     color: ${props => props.theme.blue};
-    background: ${props => props.theme.white};
+    background: ${props => props.theme.black};
+    border: 3px solid ${props => props.theme.white};
   }
   h3.cart-error {
     padding: 10px;
@@ -71,7 +72,7 @@ const ItemPageStyles = styled.div`
     transition: transform 0.5s;
     width: 300px;
     margin-left: calc(50% - 150px);
-    border: 3px solid ${props => props.theme.blue};
+    border: 3px solid ${props => props.theme.white};
     &:hover {
       transform: scale(1.2);
     }

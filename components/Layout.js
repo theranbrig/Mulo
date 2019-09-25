@@ -7,14 +7,14 @@ import { DarkContext } from './context/DarkContext';
 import { CartContext } from './context/CartContext';
 
 const darkTheme = {
-  darkBlack: '#454545',
-  black: '#343434',
-  white: 'white',
-  blue: '#70e979',
+  darkBlack: '#fff',
+  black: '#fff',
+  white: '#232323',
+  blue: '#438948',
   transparent: '#13131394',
   raleFont: 'Raleway',
   robFont: 'Roboto',
-  rightFont: 'Righteous',
+  rightFont: 'Oswald',
 };
 const lightTheme = {
   darkBlack: 'gainsboro',
@@ -36,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
 // later in your app
 const Layout = props => {
   const { darkMode, toggleDarkMode } = useContext(DarkContext);
-  
+
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <>

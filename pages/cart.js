@@ -78,7 +78,7 @@ const Cart = ({ query }) => {
               {successMessage ? (
                 <div className="order-success">
                   <h1>
-                    Your <span>Mulo</span> order is on it's way.
+                    Your <span>MULO</span> order is on it's way.
                   </h1>
                   <Link>
                     <a href="/products">Browse more great products.</a>
@@ -86,7 +86,7 @@ const Cart = ({ query }) => {
                 </div>
               ) : (
                 <h1>
-                  Nothing is in your <span>Mulo</span> cart.{' '}
+                  Nothing is in your <span>MULO</span> cart.{' '}
                   <Link>
                     <a href="/products">Start shopping today.</a>
                   </Link>
@@ -96,7 +96,7 @@ const Cart = ({ query }) => {
           ) : (
             <div>
               <h1>
-                Welcome to your <span>Mulo</span> Cart. You have <span>{cart.length}</span> item
+                Welcome to your <span>MULO</span> Cart. You have <span>{cart.length}</span> item
                 {cart.length > 1 && 's'}.
               </h1>
               <div className="cart-information">
