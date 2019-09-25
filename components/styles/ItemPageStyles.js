@@ -9,6 +9,7 @@ const ItemPageStyles = styled.div`
   min-height: 90vh;
   color: ${props => props.theme.white};
   padding-bottom: 50px;
+  font-family: ${props => props.theme.raleFont};
   .spinner {
     margin-left: calc(50% - 100px);
   }
@@ -35,6 +36,9 @@ const ItemPageStyles = styled.div`
     justify-content: center;
     margin: 0 15%;
   }
+  .right-content h3 {
+    letter-spacing: 0.15rem;
+  }
   .buttons button {
     display: block;
     border: none;
@@ -55,6 +59,13 @@ const ItemPageStyles = styled.div`
   .offer-button {
     color: ${props => props.theme.blue};
     background: ${props => props.theme.white};
+  }
+  h3.cart-error {
+    padding: 10px;
+    color: ${props => props.theme.blue};
+    border: 3px solid ${props => props.theme.blue};
+    width: 75%;
+    margin: 10px 0;
   }
   img {
     transition: transform 0.5s;

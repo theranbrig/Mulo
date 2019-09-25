@@ -11,7 +11,7 @@ import { CartContext } from '../components/context/CartContext';
 const Item = ({ query }) => {
   const [loading, setLoading] = useState(true);
   const [item, setItem] = useState({});
-  const { cart, addToCart } = useContext(CartContext);
+  const { addToCart, cartError, setCartError } = useContext(CartContext);
   const calculateMoney = amount => `$${amount / 100}`;
 
   useEffect(() => {
@@ -21,8 +21,8 @@ const Item = ({ query }) => {
       console.log(query.id);
       return product.id === query.id;
     });
+    setCartError(null);
     setItem({ ...pageItem[0] });
-    console.log(pageItem[0]);
     setTimeout(() => {
       setLoading(false);
     }, 1000);
@@ -32,12 +32,12 @@ const Item = ({ query }) => {
     return (
       <Layout>
         <ItemPageStyles>
-          <div className="loading-page">
+          <div className='loading-page'>
             <h1>
               Loading <span>Mulo</span> Product
             </h1>
-            <div className="spinner">
-              <CircleLoader sizeUnit="px" size={200} color="#70e979" />
+            <div className='spinner'>
+              <CircleLoader sizeUnit='px' size={200} color='#70e979' />
             </div>
           </div>
         </ItemPageStyles>
@@ -55,30 +55,30 @@ const Item = ({ query }) => {
         ) : (
           <>
             <h1>{item.name}</h1>
-            <div className="item-information">
-              <div className="left-content">
+            <div className='item-information'>
+              <div className='left-content'>
                 <img src={item.image} />
                 <h3>
                   Try it on with your phone with <span>Mulo AR</span>.
                 </h3>
                 <p>{item.about}</p>
               </div>
-              <div>
-                <h3 className="original-price">
+              <div className='right-content'>
+                <h3 className='original-price'>
                   Original Price: <span>{calculateMoney(item.originalPrice)}</span>
                 </h3>
-                <h3 className="discounted-price">
+                <h3 className='discounted-price'>
                   Discounted Price: <span>{calculateMoney(item.price)}</span>
                 </h3>
-                <h3 className="rating">
+                <h3 className='rating'>
                   Rating: <span>{item.rating}</span>
                 </h3>
                 {!item.problems.length ? (
-                  <div className="defects">
+                  <div className='defects'>
                     <h3>No Defects</h3>
                   </div>
                 ) : (
-                  <div className="defects">
+                  <div className='defects'>
                     <h3>Defects:</h3>
                     <ul>
                       {item.problems.map(problem => (
@@ -87,32 +87,34 @@ const Item = ({ query }) => {
                     </ul>
                   </div>
                 )}
-                <div className="buttons">
-                  <button className="add-button" onClick={() => addToCart(item.id)}>
+                <div className='buttons'>
+                  {cartError && <h3 className='cart-error'>{cartError}</h3>}
+                  <button className='add-button' onClick={() => addToCart(item.id)}>
                     Add To Cart
                   </button>
-                  <button className="offer-button" disabled={!item.canOffer}>
+                  <button className='offer-button' disabled={!item.canOffer}>
                     Make An Offer
                   </button>
                 </div>
-                <div className="more-information">
+                <div className='more-information'>
                   <h3>
                     About your <span>Mulo</span> purchase.
                   </h3>
                   <ul>
                     <li>
-                      100% Happiness Guarantee. If you aren't happy with your item, return it for free. No questions
-                      asked.
+                      100% Happiness Guarantee. If you aren't happy with your item, return it for
+                      free. No questions asked.
                     </li>
                     <li>
-                      Sizes are approximate. Since they are used items they may have changed sizes by washing and
-                      wearing. Want to see how it looks on you? Check out how it looks on you with <span>Mulo AR</span>.
+                      Sizes are approximate. Since they are used items they may have changed sizes
+                      by washing and wearing. Want to see how it looks on you? Check out how it
+                      looks on you with <span>Mulo AR</span>.
                     </li>
                     <li>Items are hand inspected and photographed by us. See it as it is.</li>
                     <li>Free shipping for orders of $50.</li>
                     <li>
-                      We ship all products in environmentally friendly containers. It is 100% recycled material and 100%
-                      compostable.
+                      We ship all products in environmentally friendly containers. It is 100%
+                      recycled material and 100% compostable.
                     </li>
                     <li>
                       <p>
@@ -126,14 +128,16 @@ const Item = ({ query }) => {
                           <span>90-99</span>: Like New - A few small imperfections.
                         </li>
                         <li>
-                          <span>80-89</span>: Great Condition - Looks good. Most couldn't tell it's used.
+                          <span>80-89</span>: Great Condition - Looks good. Most couldn't tell it's
+                          used.
                         </li>
                         <li>
-                          <span>70-79</span>: Good Condition - It looks well worn, but adds to the style.
+                          <span>70-79</span>: Good Condition - It looks well worn, but adds to the
+                          style.
                         </li>
                         <li>
-                          <span>60 and Lower</span>: Like New - It has been well worn and loved, but that is why you are
-                          here anyways.
+                          <span>60 and Lower</span>: Like New - It has been well worn and loved, but
+                          that is why you are here anyways.
                         </li>
                       </ul>
                     </li>

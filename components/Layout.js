@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Nav from './Nav';
 import Footer from './Footer';
 import { DarkContext } from './context/DarkContext';
+import { CartContext } from './context/CartContext';
 
 const darkTheme = {
   darkBlack: '#454545',
@@ -35,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
 // later in your app
 const Layout = props => {
   const { darkMode, toggleDarkMode } = useContext(DarkContext);
-
+  
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <>

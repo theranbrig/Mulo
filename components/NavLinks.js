@@ -7,7 +7,11 @@ import { CartContext } from './context/CartContext';
 
 const NavLinks = () => {
   const { user, userLoading } = useContext(UserContext);
-  const { cart, addToCart, setCart } = useContext(CartContext);
+  const { cart, addToCart, cartLoading } = useContext(CartContext);
+
+  useEffect(() => {
+    console.log('HELLO CONTEXT');
+  }, []);
 
   return (
     <>
@@ -20,16 +24,9 @@ const NavLinks = () => {
       <Link activeClassName="active" href="/about">
         <a>About</a>
       </Link>
-      {userLoading && <a>Loading...</a>}
-      {user ? (
-        <Link activeClassName="active" href="/contact">
-          <a>Contact</a>
-        </Link>
-      ) : (
-        <Link activeClassName="active" href="/contact">
-          <a>Cart ({cart.length})</a>
-        </Link>
-      )}
+      <Link activeClassName="active" href="/cart">
+        <a>Cart ({cart.length})</a>
+      </Link>
     </>
   );
 };
