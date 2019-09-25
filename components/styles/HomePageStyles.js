@@ -97,6 +97,7 @@ const HomePageStyles = styled.div`
     max-width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     color: ${props => props.theme.white};
+    padding-bottom: 50px;
     img {
       max-width: 60%;
       margin-left: 20%;

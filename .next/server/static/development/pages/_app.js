@@ -150,17 +150,38 @@ var CartProvider = function CartProvider(props) {
     setCartLoading(false);
   };
 
+  var clearCart = function clearCart() {
+    setCart([]);
+  };
+
+  var removeFromCart = function removeFromCart(id) {
+    var tempCart = Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(cart);
+
+    console.log('Old Cart', tempCart);
+    var index = tempCart.indexOf(id);
+
+    if (index > -1) {
+      tempCart.splice(index, 1);
+    }
+
+    setCart(tempCart);
+    console.log('New Cart', cart);
+    console.log('Item Removed');
+  };
+
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(CartContext.Provider, {
     value: {
       cart: cart,
       addToCart: addToCart,
       cartLoading: cartLoading,
       cartError: cartError,
-      setCartError: setCartError
+      setCartError: setCartError,
+      clearCart: clearCart,
+      removeFromCart: removeFromCart
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 41
     },
     __self: this
   }, props.children);

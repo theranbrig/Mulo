@@ -21,9 +21,6 @@ const NavLinks = () => {
       <Link activeClassName="active" href="/products">
         <a>Browse</a>
       </Link>
-      <Link activeClassName="active" href="/about">
-        <a>About</a>
-      </Link>
       <Link activeClassName="active" href="/cart">
         <a>Cart ({cart.length})</a>
       </Link>

@@ -112,6 +112,14 @@ const CartStyles = styled.div`
       }
     }
   }
+  .order-success {
+    text-align: center;
+    a {
+      color: ${props => props.theme.blue};
+      font-family: ${props => props.theme.raleFont};
+      font-size: 1.8rem;
+    }
+  }
 `;
 
 export default CartStyles;

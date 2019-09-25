@@ -21,6 +21,22 @@ const CartProvider = props => {
     setCartLoading(false);
   };
 
+  const clearCart = () => {
+    setCart([]);
+  };
+
+  const removeFromCart = id => {
+    const tempCart = [...cart];
+    console.log('Old Cart', tempCart);
+    const index = tempCart.indexOf(id);
+    if (index > -1) {
+      tempCart.splice(index, 1);
+    }
+    setCart(tempCart);
+    console.log('New Cart', cart);
+    console.log('Item Removed');
+  };
+
   return (
     <CartContext.Provider
       value={{
@@ -29,6 +45,8 @@ const CartProvider = props => {
         cartLoading,
         cartError,
         setCartError,
+        clearCart,
+        removeFromCart,
       }}
     >
       {props.children}
