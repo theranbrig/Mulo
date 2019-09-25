@@ -19,9 +19,8 @@
   },
   "scripts": {
     "dev": "next",
-    "build": "next build",
-    "export": "next export",
-    "deploy": "npm run build && npm run export"
+    "build": "next build && next export",
+    "start": "serve ./out"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
