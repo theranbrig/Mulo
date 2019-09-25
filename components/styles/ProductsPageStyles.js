@@ -43,6 +43,7 @@ const ProductsPageStyles = styled.div`
     height: 205px;
     width: 205px;
     border-radius: 50%;
+    border: 2px solid ${props => props.theme.blue};
   }
 `;
 
