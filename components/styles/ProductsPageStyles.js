@@ -3,13 +3,15 @@ import styled from 'styled-components';
 const ProductsPageStyles = styled.div`
   text-align: center;
   background-color: ${props => props.theme.black};
-  min-height: 90vh;
+  height: 100%;
 
   .products-list {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-gap: 4%;
     padding: 3% 5%;
+    height: 100%;
   }
   h1 {
     color: ${props => props.theme.white};
