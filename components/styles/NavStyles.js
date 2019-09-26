@@ -29,11 +29,11 @@ const NavStyles = styled.div`
       color: ${props => props.theme.white};
       font-size: 1.5rem;
       font-family: ${props => props.theme.rightFont};
-      border-bottom: transparent 1px solid;
+      border-bottom: transparent 3px solid;
       padding-bottom: 1px;
       text-decoration: none;
       &:hover {
-        border-bottom: ${props => props.theme.blue} 1px solid;
+        border-bottom: ${props => props.theme.blue} 3px solid;
       }
     }
     .active {
