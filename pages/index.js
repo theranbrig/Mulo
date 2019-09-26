@@ -47,11 +47,9 @@ const Home = () => {
             />
             <h3>Quality & Authenticity</h3>
             <p>
-              Lorem ipsum dolor amet organic prism whatever tumblr. Kickstarter four dollar toast
-              kitsch jianbing. Enamel pin tofu green juice chambray forage 3 wolf moon austin
-              live-edge. PBR&B succulents waistcoat +1 letterpress gentrify. DIY pok pok heirloom
-              echo park umami. Vegan forage four dollar toast venmo, meh hella bitters ennui
-              cardigan godard kitsch before they sold out whatever.
+              Before your arriving at your doorsteps, every product on our website goes through the
+              process of careful inspection to ensure authenticity and condition of the product. We
+              do this to make sure that you receive exactly what you have paid for.
             </p>
           </div>
           <div className='about-2'>
@@ -61,12 +59,9 @@ const Home = () => {
             />
             <h3>Customer Protection</h3>
             <p>
-              Lorem ipsum dolor amet austin DIY vape before they sold out sartorial organic. Cronut
-              af keffiyeh kinfolk lyft fixie sriracha irony. Four dollar toast farm-to-table mixtape
-              raw denim whatever salvia. Cloud bread chambray jianbing, hella squid literally hot
-              chicken fashion axe master cleanse photo booth small batch. Jianbing craft beer
-              mumblecore cloud bread flexitarian kitsch. PBR&B single-origin coffee church-key put a
-              bird on it, ethical brunch jean shorts.
+              At every step of our business, we do everything in our power to provide safe and
+              secure transactions. For that reason, all of the payments made by the buyers go to us
+              first. Only after we check your products, the money will be sent to the sellers.
             </p>
           </div>
           <div className='about-3'>
@@ -76,11 +71,10 @@ const Home = () => {
             />
             <h3>Environmentally Friendly</h3>
             <p>
-              Lorem ipsum dolor amet flannel vegan irony portland jianbing. Intelligentsia pop-up
-              distillery ugh, street art woke leggings shabby chic readymade pabst paleo iPhone.
-              Bitters franzen vinyl, you probably haven't heard of them narwhal la croix cornhole
-              street art next level lo-fi prism palo santo blog adaptogen. Etsy pinterest flannel
-              scenester celiac knausgaard, disrupt migas.
+              By purchasing second hand products, you help to decrease environmental footprint and
+              contribute to the animal welfare. Our company believes that though conscious
+              consumption consumers can enjoy high-quality products without polluting the
+              environment.
             </p>
           </div>
         </div>

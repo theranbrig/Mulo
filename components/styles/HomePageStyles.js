@@ -109,7 +109,8 @@ const HomePageStyles = styled.div`
     }
     p {
       font-family: ${props => props.theme.raleFont};
-      padding: 20px;
+      max-width: 60%;
+      margin-left: 20%;
       font-size: 1.2rem;
       letter-spacing: 0.05rem;
     }
