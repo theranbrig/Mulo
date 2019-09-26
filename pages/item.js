@@ -58,10 +58,6 @@ const Item = ({ query }) => {
             <div className='item-information'>
               <div className='left-content'>
                 <img src={item.image} />
-                <h3>
-                  Try it on with your phone with <span>Mulo AR</span>.
-                </h3>
-                <p>{item.about}</p>
               </div>
               <div className='right-content'>
                 <h3 className='original-price'>
